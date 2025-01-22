@@ -8,7 +8,7 @@ export default function WhyChoose() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/why%20choose-RA3R0g2NITMmhueXIztHIZEdvcN3mS.png"
+            src="/why.jpg"
             alt="Dental clinic reception"
             width={600}
             height={400}

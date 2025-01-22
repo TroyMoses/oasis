@@ -7,19 +7,19 @@ const team = [
     name: "Ms. Angel",
     role: "Customer service",
     phone: "0705812050",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/doctors-mCebj4NcAysUaWX9kNiUyz4wHI3fJc.png",
+    image: "/doc1.jpg",
   },
   {
     name: "Mr.Tayebwa Darius",
     role: "Fillings, Dental surgery, Orthodontic treatment, Root canals,Teeth whitening,Teeth cleaning,Teeth Extraction etc",
     phone: "0709966946",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/doctors-mCebj4NcAysUaWX9kNiUyz4wHI3fJc.png",
+    image: "/doc2.jpg",
   },
   {
     name: "Dentist Gad",
     role: "Our Prosthodontist.Specialized in teeth replacement,Dental implants,Veneers, Dentures,Crowns and Bridges etc",
     phone: "0788127374",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/doctors-mCebj4NcAysUaWX9kNiUyz4wHI3fJc.png",
+    image: "/doc3.jpg",
   },
 ]
 

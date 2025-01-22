@@ -8,13 +8,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const banners = [
   {
     id: 1,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner1-FJtfZAsRGanIH0fTmqQo97Y7LDY5L9.png",
-    alt: "Back to School Season",
+    image: "/banner1.jpg",
+    alt: "banner 1",
   },
   {
     id: 2,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner2-xatW6KHoABEEEFRPak1hFWjLsCnqp2.png",
-    alt: "Smile Pakalast Campaign",
+    image: "/banner2.jpg",
+    alt: "banner 2",
   },
 ]
 

@@ -6,7 +6,7 @@ export default function About() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%20below-Ak4VE2aY3U27k3riSlVpP01nBjRTH4.png"
+            src="/about.jpg"
             alt="Dental procedure"
             width={600}
             height={400}
