@@ -1,27 +1,45 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Image from "next/image"
-import { Card } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import * as React from "react";
+import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const banners = [
   {
     id: 1,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner1-FJtfZAsRGanIH0fTmqQo97Y7LDY5L9.png",
-    alt: "Back to School Season",
+    image: "/banner1.jpg",
+    alt: "banner 1",
   },
   {
     id: 2,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner2-xatW6KHoABEEEFRPak1hFWjLsCnqp2.png",
-    alt: "Smile Pakalast Campaign",
+    image: "/banner2.jpg",
+    alt: "banner 2",
   },
-]
+];
 
 export default function Hero() {
   return (
     <section className="w-full">
-      <Carousel className="w-full">
+      <Carousel
+        className="w-full"
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
+      >
         <CarouselContent>
           {banners.map((banner) => (
             <CarouselItem key={banner.id}>
@@ -32,7 +50,7 @@ export default function Hero() {
                     alt={banner.alt}
                     width={1920}
                     height={600}
-                    className="w-full object-cover"
+                    className="w-full object-cover h-[460px]"
                   />
                 </Card>
               </div>
@@ -45,4 +63,3 @@ export default function Hero() {
     </section>
   )
 }
-

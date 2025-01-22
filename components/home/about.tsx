@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Button } from "../ui/button"
 
 export default function About() {
   return (
@@ -6,14 +7,14 @@ export default function About() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%20below-Ak4VE2aY3U27k3riSlVpP01nBjRTH4.png"
+            src="/about.jpg"
             alt="Dental procedure"
             width={600}
             height={400}
-            className="rounded-lg"
+            className="rounded-lg h-[300px] w-[550px] ml-5 md:ml-10"
           />
-          <div>
-            <h2 className="text-3xl font-bold mb-6">About Dental Solutions Kampala</h2>
+          <div className="pl-6">
+            <h2 className="text-3xl font-bold mb-6">About Oasis Dental Clinic</h2>
             <p className="text-muted-foreground mb-6">
               Since 2012, we have provided patients with the finest dental health treatments in Uganda. Our team of
               highly skilled specialists, consisting of dentists and hygienists are led by Dr. in their commitment to
@@ -21,6 +22,7 @@ export default function About() {
               dentistry, state-of-the-art cosmetic dentistry, dental implants, prosthetics, children{"'"}s dentistry, veneer
               placements and orthodontics.
             </p>
+          <Button className="mt-2 md:mt-5">Explore More</Button>
           </div>
         </div>
       </div>
