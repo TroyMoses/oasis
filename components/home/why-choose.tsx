@@ -31,8 +31,7 @@ export default function WhyChoose() {
                     Best Dentists Near Me
                   </h3>
                   <p className="text-muted-foreground">
-                    Find the best dentist near you in Kampala at Dental
-                    Solutions Kampala. We offer a wide range of dental services
+                    Find the best dentist near you in Kampala at Oasis Dental Clinic. We offer a wide range of dental services
                     for a healthy and beautiful smile. Contact us today!
                   </p>
                 </div>
