@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 mt-7 ml-5">
-          <Image src="/logo.png" alt="Dental Solutions Kampala" width={180} height={50} />
+          <Image src="/logo.png" alt="Oasis Dental Clinic" width={180} height={50} />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">

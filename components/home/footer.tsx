@@ -24,19 +24,19 @@ export default function Footer() {
               <h4 className="text-gray-200 mb-2 uppercase">Contacts</h4>
               <div className="space-y-2">
                 <Link
-                  href="mailto:info@kaysdentalclinic.com"
+                  href="mailto:info@oasisdentalclinic.com"
                   className="text-gray-500 hover:text-gray-400 flex items-center gap-2"
                 >
                   <Mail className="h-4 w-4" />
-                  info@kaysdentalclinic.com
+                  info@oasisdentalclinic.com
                 </Link>
-                <Link href="tel:+256200741500" className="text-gray-500 hover:text-gray-400 flex items-center gap-2">
+                <Link href="tel:+256700624015" className="text-gray-500 hover:text-gray-400 flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  +256 200 741500
+                  +256 700 624 015
                 </Link>
-                <Link href="tel:+256750639308" className="text-gray-500 hover:text-gray-400 flex items-center gap-2">
+                <Link href="tel:+2567629639308" className="text-gray-500 hover:text-gray-400 flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  +256 750 639 308
+                  +256 762 939 942
                 </Link>
                 <p className="text-gray-500 flex items-center gap-2">
                   <Phone className="h-4 w-4" />
@@ -111,10 +111,10 @@ export default function Footer() {
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-800">
-        <div className="container py-6 px-20">
+        <div className="container py-6 md:px-20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400">Oasis Dental Clinic © 2024 | all rights reserved</p>
-            <div className="flex gap-4 mr-[165px]">
+            <p className="text-gray-400">Oasis Dental Clinic © 2025 | All rights reserved</p>
+            <div className="flex gap-4 md:mr-[165px]">
               <Link href="#" className="text-gray-400 hover:text-primary">
                 <Facebook className="h-5 w-5" />
               </Link>

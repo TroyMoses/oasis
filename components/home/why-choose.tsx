@@ -38,7 +38,7 @@ export default function WhyChoose() {
                 </div>
               </div>
             </div>
-            <Button className="mt-8">Get Appointment</Button>
+            <Button className="mt-8">Book Appointment</Button>
           </div>
           <Image
             src="/why.jpg"
