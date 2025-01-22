@@ -50,7 +50,7 @@ export default function Hero() {
                     alt={banner.alt}
                     width={1920}
                     height={600}
-                    className="w-full object-cover"
+                    className="w-full object-cover h-[460px]"
                   />
                 </Card>
               </div>

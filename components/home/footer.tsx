@@ -113,7 +113,7 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="container py-6 px-20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400">Dental Solutions Kampala © 2024 | all rights reserved</p>
+            <p className="text-gray-400">Oasis Dental Clinic © 2024 | all rights reserved</p>
             <div className="flex gap-4 mr-[165px]">
               <Link href="#" className="text-gray-400 hover:text-primary">
                 <Facebook className="h-5 w-5" />
