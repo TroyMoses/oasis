@@ -1,9 +1,16 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Image from "next/image"
-import { Card } from "@/components/ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import * as React from "react";
+import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const banners = [
   {
@@ -16,12 +23,23 @@ const banners = [
     image: "/banner2.jpg",
     alt: "banner 2",
   },
-]
+];
 
 export default function Hero() {
   return (
     <section className="w-full">
-      <Carousel className="w-full">
+      <Carousel
+        className="w-full"
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
+      >
         <CarouselContent>
           {banners.map((banner) => (
             <CarouselItem key={banner.id}>
@@ -45,4 +63,3 @@ export default function Hero() {
     </section>
   )
 }
-
