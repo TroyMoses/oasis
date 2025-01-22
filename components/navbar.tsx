@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2 mt-7 ml-[150px] md:ml-5">
+        <Link href="/" className="flex items-center space-x-2 mt-7 ml-5">
           <Image src="/logo.png" alt="Dental Solutions Kampala" width={180} height={50} />
         </Link>
 
@@ -80,8 +80,8 @@ export default function Navbar() {
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium">Call Us</span>
-                <Link href="tel:+256706966946" className="text-sm font-bold">
-                  +256 706 966946
+                <Link href="tel:+256762939942" className="text-sm font-bold">
+                  +256 762 939942
                 </Link>
               </div>
               <Button className="w-full">Book Now</Button>

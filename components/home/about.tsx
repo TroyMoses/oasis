@@ -11,9 +11,9 @@ export default function About() {
             alt="Dental procedure"
             width={600}
             height={400}
-            className="rounded-lg h-[300px] w-[550px] ml-10"
+            className="rounded-lg h-[300px] w-[550px] ml-5 md:ml-10"
           />
-          <div>
+          <div className="pl-6">
             <h2 className="text-3xl font-bold mb-6">About Oasis Dental Clinic</h2>
             <p className="text-muted-foreground mb-6">
               Since 2012, we have provided patients with the finest dental health treatments in Uganda. Our team of
@@ -22,7 +22,7 @@ export default function About() {
               dentistry, state-of-the-art cosmetic dentistry, dental implants, prosthetics, children{"'"}s dentistry, veneer
               placements and orthodontics.
             </p>
-          <Button className="mt-5">Explore More</Button>
+          <Button className="mt-2 md:mt-5">Explore More</Button>
           </div>
         </div>
       </div>

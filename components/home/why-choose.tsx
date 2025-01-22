@@ -4,7 +4,7 @@ import { ClipboardList, Users } from "lucide-react";
 
 export default function WhyChoose() {
   return (
-    <section className="py-16 px-20">
+    <section className="py-10 md:py-16 md:px-20 pl-5 pr-2">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -45,7 +45,7 @@ export default function WhyChoose() {
             alt="Dental clinic reception"
             width={600}
             height={400}
-            className="rounded-lg h-[380px] w-[400px] ml-28"
+            className="rounded-lg h-[380px] w-[400px] ml-28 hidden md:block"
           />
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Team() {
     <section className="py-16 bg-slate-50">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-12">Professional Dentists at Oasis Dental Clinic</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 w-full">
           {team.map((member) => (
             <div key={member.name} className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 relative rounded-full overflow-hidden">
