@@ -105,22 +105,9 @@ export default function Footer() {
               <div>
                 <h4 className="text-gray-400 mb-2">Kanjokya Street</h4>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7573!2d32.5947!3d0.3356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnMjguNCJOIDMywrAzNSc0MC45IkU!5e0!3m2!1sen!2sug!4v1234567890!5m2!1sen!2sug"
+                  src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15958.990273909652!2d32.5719775!3d0.341217!3m2!1i1024!2i768!4f13.1!2m1!1soasis%20dental%20clinic!5e0!3m2!1sen!2sug!4v1737671094059!5m2!1sen!2sug"
                   width="100%"
-                  height="150"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded"
-                />
-              </div>
-              <div>
-                <h4 className="text-gray-400 mb-2">Bhatia Chambers</h4>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7573!2d32.5947!3d0.3356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnMjguNCJOIDMywrAzNSc0MC45IkU!5e0!3m2!1sen!2sug!4v1234567890!5m2!1sen!2sug"
-                  width="100%"
-                  height="150"
+                  height="300"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"

@@ -21,7 +21,7 @@ const contactInfo = [
 
 export default function ContactInfo() {
   return (
-    <section className="py-16">
+    <section className="py-16 px-10">
       <div className="container">
         <div className="text-center mb-12">
           <p className="text-primary font-medium mb-2">GET IN TOUCH</p>
