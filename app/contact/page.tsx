@@ -1,11 +1,14 @@
-import React from 'react'
+import Hero from "@/components/contact/hero"
+import ContactInfo from "@/components/contact/contact-info"
+import ContactForm from "@/components/contact/contact-form"
 
-const About = () => {
+export default function ContactPage() {
   return (
-    <div className="flex items-center justify-center text-4xl">
-      Hello Brichy
-    </div>
+    <main>
+      <Hero />
+      <ContactInfo />
+      <ContactForm />
+    </main>
   )
 }
 
-export default About;
