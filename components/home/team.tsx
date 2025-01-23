@@ -5,7 +5,7 @@ import { Phone } from "lucide-react"
 const team = [
   {
     name: "Ms. Angel",
-    role: "Customer service",
+    role: "Fillings, Dental surgery, Orthodontic treatment, Root canals,Teeth whitening,Teeth cleaning,Teeth Extraction etc",
     phone: "0705812050",
     image: "/doc1.jpg",
   },

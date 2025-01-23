@@ -25,8 +25,8 @@ const services = [
 
 export default function DetailedServices() {
   return (
-    <section className="py-16 bg-slate-50">
-      <div className="container">
+    <section className="py-16 bg-slate-50 px-10">
+      <div className="container w-full md:w-[1200px]">
         <div className="grid gap-8">
           {services.map((service, index) => (
             <Card key={index}>

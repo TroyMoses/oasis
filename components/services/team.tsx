@@ -6,7 +6,7 @@ import { Phone } from "lucide-react"
 const team = [
   {
     name: "Ms. Angel",
-    role: "Customer service",
+    role: "Fillings, Dental surgery, Orthodontic treatment, Root canals,Teeth whitening,Teeth cleaning,Teeth Extraction etc",
     phone: "0705812050",
     image: "/doc1.jpg",
   },
@@ -26,7 +26,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section className="py-16">
+    <section className="py-16 px-10">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-12">Professional Dentists at Dental solutions Kampala</h2>
         <div className="grid md:grid-cols-3 gap-8">

@@ -8,7 +8,7 @@ export default function Hero() {
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="container relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl ml-10 font-bold text-white">About Us</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl ml-20 font-bold text-white">About Us</h1>
         </div>
       </section>
     )

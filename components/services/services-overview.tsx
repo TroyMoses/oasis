@@ -17,7 +17,7 @@ const services = [
   },
   {
     icon: Crown,
-    title: "Dental Crowns and Bridges",
+    title: "Dental Crowns",
     description:
       "Looking for a dental crown and bridge work services near me in Kampala uganda? look no further than Dental solutions Kampala,we provide expert dental crowns and bridge procedures to restore your",
   },
@@ -31,7 +31,7 @@ const services = [
 
 export default function ServicesOverview() {
   return (
-    <section className="py-16">
+    <section className="py-16 px-10">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold">Dental Solutions services</h2>
