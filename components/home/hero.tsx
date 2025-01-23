@@ -61,5 +61,5 @@ export default function Hero() {
         <CarouselNext />
       </Carousel>
     </section>
-  )
+  );
 }
