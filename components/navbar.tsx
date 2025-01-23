@@ -84,7 +84,7 @@ export default function Navbar() {
               </NavLink>
               <NavLink
                 href="/testimonials"
-                active={pathname === "/blog"}
+                active={pathname === "/testimonials"}
                 onClick={toggleMenu}
               >
                 Testimonials
@@ -105,7 +105,7 @@ export default function Navbar() {
                   +256 762 939942
                 </Link>
               </div>
-              <Button className="w-full">Book Now</Button>
+              <Button className="w-full">Book Appointment</Button>
             </div>
           </SheetContent>
         </Sheet>

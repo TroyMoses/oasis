@@ -40,10 +40,10 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section className="py-16">
+    <section className="py-16 px-8">
       <div className="container">
-        <div className="flex items-start gap-12 max-w-4xl mx-auto">
-          <div className="hidden md:block flex-shrink-0">
+        <div className="flex flex-col md:flex-row items-start gap-5 md:gap-12 max-w-4xl mx-auto">
+          <div className="block flex-shrink-0">
             <div className="flex items-center gap-4">
               <div className="bg-primary rounded-full p-4">
                 <svg
