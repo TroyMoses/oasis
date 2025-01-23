@@ -1,10 +1,16 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Progress } from "@/components/ui/progress"
-import { Button } from "@/components/ui/button"
-import { SmileIcon as Tooth, FileText, Smile, Stethoscope, Microscope } from "lucide-react"
+import { useState } from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button";
+import {
+  SmileIcon as Tooth,
+  FileText,
+  Smile,
+  Stethoscope,
+  Microscope,
+} from "lucide-react";
 
 const services = [
   {
@@ -23,7 +29,8 @@ const services = [
     id: "pediatric-dentistry",
     icon: FileText,
     title: "Pediatric Dentistry",
-    description: "Pediatric dentistry is the branch of dentistry dealing with children from birth through adolescence.",
+    description:
+      "Pediatric dentistry is the branch of dentistry dealing with children from birth through adolescence.",
     stats: [
       { label: "Dental Perfection", value: 80 },
       { label: "Dental Solution", value: 82 },
@@ -45,7 +52,8 @@ const services = [
     id: "dental-services",
     icon: Stethoscope,
     title: "Dental Services",
-    description: "Comprehensive dental services for all your oral health needs.",
+    description:
+      "Comprehensive dental services for all your oral health needs.",
     stats: [
       { label: "Dental Perfection", value: 78 },
       { label: "Dental Solution", value: 90 },
@@ -63,12 +71,11 @@ const services = [
       { label: "Durability", value: 100 },
     ],
   },
-]
+];
 
 export default function Services() {
-  
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [activeTab, setActiveTab] = useState(services[0].id)
+  const [activeTab, setActiveTab] = useState(services[0].id);
 
   return (
     <section className="py-16 bg-slate-50 px-12">
@@ -93,14 +100,20 @@ export default function Services() {
             <TabsContent key={service.id} value={service.id} className="mt-8">
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                <p className="text-muted-foreground mb-8">{service.description}</p>
+                <p className="text-muted-foreground mb-8">
+                  {service.description}
+                </p>
 
                 <div className="space-y-6 w-[400px] md:w-[800px]">
                   {service.stats.map((stat, index) => (
                     <div key={index}>
                       <div className="flex justify-between mb-2">
-                        <span className="text-sm font-medium">{stat.label}</span>
-                        <span className="text-sm font-medium">{stat.value}%</span>
+                        <span className="text-sm font-medium">
+                          {stat.label}
+                        </span>
+                        <span className="text-sm font-medium">
+                          {stat.value}%
+                        </span>
                       </div>
                       <Progress value={stat.value} className="h-2" />
                     </div>
@@ -114,6 +127,5 @@ export default function Services() {
         </Tabs>
       </div>
     </section>
-  )
+  );
 }
-

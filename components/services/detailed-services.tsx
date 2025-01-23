@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   {
@@ -21,7 +21,7 @@ const services = [
       "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular tooth cleanings are important to",
     image: "/banner1.jpg",
   },
-]
+];
 
 export default function DetailedServices() {
   return (
@@ -42,7 +42,9 @@ export default function DetailedServices() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                    <p className="text-muted-foreground mb-6">{service.description}</p>
+                    <p className="text-muted-foreground mb-6">
+                      {service.description}
+                    </p>
                     <Button>Read More</Button>
                   </div>
                 </div>
@@ -52,6 +54,5 @@ export default function DetailedServices() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

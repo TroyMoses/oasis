@@ -1,25 +1,30 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Phone, Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import Image from "next/image"
-import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
+import { useState } from "react";
+import Link from "next/link";
+import { Phone, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
-  const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen)
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 mt-7 ml-5">
-          <Image src="/logo.png" alt="Oasis Dental Clinic" width={180} height={50} />
+          <Image
+            src="/logo.png"
+            alt="Oasis Dental Clinic"
+            width={180}
+            height={50}
+          />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
@@ -63,16 +68,32 @@ export default function Navbar() {
               <NavLink href="/" active={pathname === "/"} onClick={toggleMenu}>
                 Home
               </NavLink>
-              <NavLink href="/about" active={pathname === "/about"} onClick={toggleMenu}>
+              <NavLink
+                href="/about"
+                active={pathname === "/about"}
+                onClick={toggleMenu}
+              >
                 About Us
               </NavLink>
-              <NavLink href="/services" active={pathname === "/services"} onClick={toggleMenu}>
+              <NavLink
+                href="/services"
+                active={pathname === "/services"}
+                onClick={toggleMenu}
+              >
                 Our Services
               </NavLink>
-              <NavLink href="/testimonials" active={pathname === "/blog"} onClick={toggleMenu}>
+              <NavLink
+                href="/testimonials"
+                active={pathname === "/blog"}
+                onClick={toggleMenu}
+              >
                 Testimonials
               </NavLink>
-              <NavLink href="/contact" active={pathname === "/contact"} onClick={toggleMenu}>
+              <NavLink
+                href="/contact"
+                active={pathname === "/contact"}
+                onClick={toggleMenu}
+              >
                 Contact Us
               </NavLink>
             </nav>
@@ -90,14 +111,14 @@ export default function Navbar() {
         </Sheet>
       </div>
     </header>
-  )
+  );
 }
 
 interface NavLinkProps {
-  href: string
-  active: boolean
-  children: React.ReactNode
-  onClick?: () => void
+  href: string;
+  active: boolean;
+  children: React.ReactNode;
+  onClick?: () => void;
 }
 
 function NavLink({ href, active, children, onClick }: NavLinkProps) {
@@ -106,12 +127,11 @@ function NavLink({ href, active, children, onClick }: NavLinkProps) {
       href={href}
       className={cn(
         "text-base font-medium transition-colors hover:text-primary",
-        active ? "text-primary" : "text-muted-foreground",
+        active ? "text-primary" : "text-muted-foreground"
       )}
       onClick={onClick}
     >
       {children}
     </Link>
-  )
+  );
 }
-

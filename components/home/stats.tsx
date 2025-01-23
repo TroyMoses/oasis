@@ -1,4 +1,4 @@
-import { Award, Heart, Briefcase, CheckCircle } from "lucide-react"
+import { Award, Heart, Briefcase, CheckCircle } from "lucide-react";
 
 const stats = [
   {
@@ -25,7 +25,7 @@ const stats = [
     value: "6+",
     label: "Years of experience",
   },
-]
+];
 
 export default function Stats() {
   return (
@@ -33,7 +33,10 @@ export default function Stats() {
       <div className="container">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat) => (
-            <div key={stat.id} className="flex flex-col items-center justify-center p-6 text-center">
+            <div
+              key={stat.id}
+              className="flex flex-col items-center justify-center p-6 text-center"
+            >
               <stat.icon className="h-7 w-7 mb-4 text-primary" />
               <h3 className="text-2xl font-bold mb-2">{stat.value}</h3>
               <p className="text-muted-foreground">{stat.label}</p>
@@ -42,6 +45,5 @@ export default function Stats() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

@@ -19,8 +19,8 @@ export default function WhyChoose() {
                     Dental Clinic Near Me
                   </h3>
                   <p className="text-muted-foreground">
-                    Get top-quality dental care at Oasis Dental Clinic, the
-                    best dental clinic near me. Contact us now!
+                    Get top-quality dental care at Oasis Dental Clinic, the best
+                    dental clinic near me. Contact us now!
                   </p>
                 </div>
               </div>
@@ -31,8 +31,9 @@ export default function WhyChoose() {
                     Best Dentists Near Me
                   </h3>
                   <p className="text-muted-foreground">
-                    Find the best dentist near you in Kampala at Oasis Dental Clinic. We offer a wide range of dental services
-                    for a healthy and beautiful smile. Contact us today!
+                    Find the best dentist near you in Kampala at Oasis Dental
+                    Clinic. We offer a wide range of dental services for a
+                    healthy and beautiful smile. Contact us today!
                   </p>
                 </div>
               </div>

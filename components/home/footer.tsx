@@ -1,7 +1,15 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, Clock } from "lucide-react"
+import Link from "next/link";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+  Mail,
+  Phone,
+  Clock,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,14 +18,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Location Section */}
           <div>
-            <h3 className="text-gray-200 font-semibold mb-4 uppercase">Location</h3>
+            <h3 className="text-gray-200 font-semibold mb-4 uppercase">
+              Location
+            </h3>
             <div className="space-y-2">
               <h4 className="text-gray-500">Kanjokya</h4>
-              <p className="text-gray-500">Plot 56, Kanjokya Street, Kamwokya near Ark House.</p>
+              <p className="text-gray-500">
+                Plot 56, Kanjokya Street, Kamwokya near Ark House.
+              </p>
 
               <h4 className="text-gray-500 mt-4">City center</h4>
               <p className="text-gray-500">Bhatia chambers.</p>
-              <p className="text-gray-500">Plot 5 Parliamentary avenue, Kampala.</p>
+              <p className="text-gray-500">
+                Plot 5 Parliamentary avenue, Kampala.
+              </p>
             </div>
 
             <div className="mt-6">
@@ -30,11 +44,17 @@ export default function Footer() {
                   <Mail className="h-4 w-4" />
                   info@oasisdentalclinic.com
                 </Link>
-                <Link href="tel:+256700624015" className="text-gray-500 hover:text-gray-400 flex items-center gap-2">
+                <Link
+                  href="tel:+256700624015"
+                  className="text-gray-500 hover:text-gray-400 flex items-center gap-2"
+                >
                   <Phone className="h-4 w-4" />
                   +256 700 624 015
                 </Link>
-                <Link href="tel:+2567629639308" className="text-gray-500 hover:text-gray-400 flex items-center gap-2">
+                <Link
+                  href="tel:+2567629639308"
+                  className="text-gray-500 hover:text-gray-400 flex items-center gap-2"
+                >
                   <Phone className="h-4 w-4" />
                   +256 762 939 942
                 </Link>
@@ -48,7 +68,9 @@ export default function Footer() {
 
           {/* Opening Hours Section */}
           <div className="pl-10">
-            <h3 className="text-gray-200 font-semibold mb-4 uppercase">Opening Hours</h3>
+            <h3 className="text-gray-200 font-semibold mb-4 uppercase">
+              Opening Hours
+            </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-gray-500" />
@@ -76,7 +98,9 @@ export default function Footer() {
 
           {/* Maps Section */}
           <div>
-            <h3 className="text-gray-200 font-semibold mb-4 uppercase">Our Locations</h3>
+            <h3 className="text-gray-200 font-semibold mb-4 uppercase">
+              Our Locations
+            </h3>
             <div className="space-y-4">
               <div>
                 <h4 className="text-gray-400 mb-2">Kanjokya Street</h4>
@@ -113,7 +137,9 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="container py-6 md:px-20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400">Oasis Dental Clinic © 2025 | All rights reserved</p>
+            <p className="text-gray-400">
+              Oasis Dental Clinic © 2025 | All rights reserved
+            </p>
             <div className="flex gap-4 md:mr-[165px]">
               <Link href="#" className="text-gray-400 hover:text-primary">
                 <Facebook className="h-5 w-5" />
@@ -132,6 +158,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
