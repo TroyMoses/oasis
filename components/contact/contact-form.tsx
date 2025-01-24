@@ -1,34 +1,82 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Textarea } from "@/components/ui/textarea"
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 
-const services = [
-  "Dental Braces",
-  "Root Canal Treatment",
-  "Dental Crowns",
-  "Teeth Whitening",
-  "Dental Implants",
-  "General Checkup",
-]
+const subjects = [
+  "Question",
+  "Inquiry",
+  "Consultation",
+  "Other(Specify in message)",
+];
+
+const formSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Invalid email address"),
+  phone: z.string().optional(),
+  subject: z.string().min(1, "Please select a subject"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
+
+type FormValues = z.infer<typeof formSchema>;
 
 export default function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const { toast } = useToast();
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setIsSubmitting(true)
+  const createContact = useMutation(api.contacts.create);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+  const form = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    },
+  });
 
-    setIsSubmitting(false)
-    // Reset form or show success message
-  }
+  const onSubmit = async (data: FormValues) => {
+    try {
+      await createContact(data);
+
+      toast({
+        title: "Message sent successfully!",
+        description: "We'll get back to you as soon as possible.",
+      });
+
+      form.reset();
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Error sending message",
+        description: "Please try again later.",
+      });
+    }
+  };
 
   return (
     <section className="py-16 bg-slate-50 px-10">
@@ -50,63 +98,134 @@ export default function ContactForm() {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <div className="mb-8">
-              <h2 className="text-2xl font-bold mb-2">Have Questions? Get in Touch!</h2>
+              <h2 className="text-2xl font-bold mb-2">
+                Have Questions? Get in Touch!
+              </h2>
               <p className="text-muted-foreground">
-                Fill out the form below and we{"'"}ll get back to you as soon as possible.
+                Fill out the form below and we{"'"}ll get back to you as soon as
+                possible.
               </p>
             </div>
-
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name">
-                    Full Name<span className="text-red-500">*</span>
-                  </Label>
-                  <Input id="name" placeholder="Your names" required />
+            <Form {...form}>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-6"
+              >
+                <div className="grid md:grid-cols-2 gap-4">
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>
+                          Full Name<span className="text-red-500">*</span>
+                        </FormLabel>
+                        <FormControl>
+                          <Input placeholder="Your names" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>
+                          Email<span className="text-red-500">*</span>
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            type="email"
+                            placeholder="Your email"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">
-                    Email<span className="text-red-500">*</span>
-                  </Label>
-                  <Input id="email" type="email" placeholder="Your email" required />
-                </div>
-              </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input id="phone" type="tel" placeholder="Number" />
+                <div className="grid md:grid-cols-2 gap-4">
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Phone Number</FormLabel>
+                        <FormControl>
+                          <Input type="tel" placeholder="Number" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="subject"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Select Subject</FormLabel>
+                        <Select
+                          onValueChange={field.onChange}
+                          defaultValue={field.value}
+                        >
+                          <FormControl>
+                            <SelectTrigger>
+                              <SelectValue placeholder="Select..." />
+                            </SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            {subjects.map((subject) => (
+                              <SelectItem
+                                key={subject}
+                                value={subject.toLowerCase()}
+                              >
+                                {subject}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="service">Select Service</Label>
-                  <Select>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select..." />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {services.map((service) => (
-                        <SelectItem key={service} value={service.toLowerCase()}>
-                          {service}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="message">Your message or question</Label>
-                <Textarea id="message" placeholder="Your message" className="min-h-[150px]" />
-              </div>
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Your message or question</FormLabel>
+                      <FormControl>
+                        <Textarea
+                          placeholder="Your message"
+                          className="min-h-[150px]"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Sending message..." : "Send Message"}
-              </Button>
-            </form>
+                <Button
+                  type="submit"
+                  className="w-full"
+                  disabled={form.formState.isSubmitting}
+                >
+                  {form.formState.isSubmitting
+                    ? "Sending message..."
+                    : "Send Message"}
+                </Button>
+              </form>
+            </Form>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-

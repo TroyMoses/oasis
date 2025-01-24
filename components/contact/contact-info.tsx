@@ -1,5 +1,5 @@
-import { MapPin, Phone, Mail } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
+import { MapPin, Phone, Mail } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const contactInfo = [
   {
@@ -17,7 +17,7 @@ const contactInfo = [
     title: "Our Email",
     details: ["Main Email: oasisdentalclinic@gmail.com"],
   },
-]
+];
 
 export default function ContactInfo() {
   return (
@@ -47,6 +47,5 @@ export default function ContactInfo() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
