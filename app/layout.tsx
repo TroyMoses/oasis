@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import ScrollToTop from "@/components/scroll-to-top";
 import WhatsAppButton from "@/components/whatsapp-button";
 import Navbar from "@/components/navbar";
+import { ConvexClientProvider } from "./ConvexClientProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
-        <ScrollToTop />
-        <WhatsAppButton />
+        <ConvexClientProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <ScrollToTop />
+          <WhatsAppButton />
+        </ConvexClientProvider>
       </body>
     </html>
   );
