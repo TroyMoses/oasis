@@ -2,6 +2,18 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
+  // Add CORS headers
+  const headers = new Headers({
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+  });
+
+  // Handle preflight request
+  if (req.method === "OPTIONS") {
+    return new NextResponse(null, { headers });
+  }
+
   const { name, email, phone, subject, message } = await req.json();
 
   // Create a transporter using SMTP
@@ -46,9 +58,9 @@ export async function POST(req: Request) {
   try {
     await transporter.sendMail(adminMailOptions);
     await transporter.sendMail(userMailOptions);
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true }, { headers });
   } catch (error) {
     console.error("Error sending email:", error);
-    return NextResponse.json({ success: false }, { status: 500 });
+    return NextResponse.json({ success: false }, { status: 500, headers });
   }
 }

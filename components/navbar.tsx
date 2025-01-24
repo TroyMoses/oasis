@@ -53,7 +53,9 @@ export default function Navbar() {
               +256 762 939942
             </Link>
           </div>
-          <Button>Book Appointment</Button>
+          <Link href="/booking" className="text-sm font-bold">
+            <Button>Book Appointment</Button>
+          </Link>
         </div>
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -98,14 +100,16 @@ export default function Navbar() {
               </NavLink>
             </nav>
             <div className="mt-8 mb-2 space-y-4">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 mb-4">
                 <Phone className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium">Call Us</span>
                 <Link href="tel:+256762939942" className="text-sm font-bold">
                   +256 762 939942
                 </Link>
               </div>
-              <Button className="w-full">Book Appointment</Button>
+              <Link href="/booking" className="mt-2">
+                <Button className="w-full">Book Appointment</Button>
+              </Link>
             </div>
           </SheetContent>
         </Sheet>
