@@ -1,15 +1,19 @@
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import type { Service, ServiceCategory } from "@/types/booking"
-import { Mountain } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import type { Service, ServiceCategory } from "@/types/booking";
+import { Mountain } from "lucide-react";
 
 interface ServiceStepProps {
-  selectedService?: Service
-  onSelect: (service: Service) => void
-  onNext: () => void
+  selectedService?: Service;
+  onSelect: (service: Service) => void;
+  onNext: () => void;
 }
 
-const categories: ServiceCategory[] = ["ALL", "Cosmetic Dentistry", "Endodontics"]
+const categories: ServiceCategory[] = [
+  "ALL",
+  "Cosmetic Dentistry",
+  "Endodontics",
+];
 
 const services: Service[] = [
   {
@@ -40,9 +44,13 @@ const services: Service[] = [
     duration: 70,
     price: 100000,
   },
-]
+];
 
-export default function ServiceStep({ selectedService, onSelect, onNext }: ServiceStepProps) {
+export default function ServiceStep({
+  selectedService,
+  onSelect,
+  onNext,
+}: ServiceStepProps) {
   return (
     <div className="space-y-6">
       <div>
@@ -79,7 +87,9 @@ export default function ServiceStep({ selectedService, onSelect, onNext }: Servi
                   <h3 className="font-medium mb-2">{service.name}</h3>
                   <div className="flex justify-between text-sm text-muted-foreground">
                     <span>Duration: {service.duration}m</span>
-                    <span className="font-semibold text-primary">UGX{service.price.toLocaleString()}</span>
+                    <span className="font-semibold text-primary">
+                      UGX{service.price.toLocaleString()}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -94,6 +104,5 @@ export default function ServiceStep({ selectedService, onSelect, onNext }: Servi
         </Button>
       </div>
     </div>
-  )
+  );
 }
-
