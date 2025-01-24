@@ -7,13 +7,11 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 
-const services = [
-  "Dental Braces",
-  "Root Canal Treatment",
-  "Dental Crowns",
-  "Teeth Whitening",
-  "Dental Implants",
-  "General Checkup",
+const subjects = [
+  "Question",
+  "Inquiry",
+  "Consultation",
+  "Other(Specify in message)",
 ]
 
 export default function ContactForm() {
@@ -78,15 +76,15 @@ export default function ContactForm() {
                   <Input id="phone" type="tel" placeholder="Number" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="service">Select Service</Label>
+                  <Label htmlFor="service">Select Subject</Label>
                   <Select>
                     <SelectTrigger>
                       <SelectValue placeholder="Select..." />
                     </SelectTrigger>
                     <SelectContent>
-                      {services.map((service) => (
-                        <SelectItem key={service} value={service.toLowerCase()}>
-                          {service}
+                      {subjects.map((subject) => (
+                        <SelectItem key={subject} value={subject.toLowerCase()}>
+                          {subject}
                         </SelectItem>
                       ))}
                     </SelectContent>
