@@ -53,7 +53,9 @@ export default function Navbar() {
               +256 762 939942
             </Link>
           </div>
-          <Button>Book Appointment</Button>
+          <Link href="/booking" className="text-sm font-bold">
+            <Button>Book Appointment</Button>
+          </Link>
         </div>
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>

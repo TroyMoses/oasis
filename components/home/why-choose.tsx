@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ClipboardList, Users } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChoose() {
   return (
@@ -38,7 +39,9 @@ export default function WhyChoose() {
                 </div>
               </div>
             </div>
-            <Button className="mt-8">Book Appointment</Button>
+            <Link href="/booking" className="text-sm font-bold">
+              <Button className="mt-8">Book Appointment</Button>
+            </Link>
           </div>
           <Image
             src="/why.jpg"
