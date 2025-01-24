@@ -59,7 +59,7 @@ export default function ServiceStep({
           {categories.map((category) => (
             <Button
               key={category}
-              variant={category === "Endodontics" ? "default" : "outline"}
+              variant={category === "ALL" ? "default" : "outline"}
               className="rounded-full"
             >
               {category}

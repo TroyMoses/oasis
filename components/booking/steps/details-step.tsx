@@ -137,7 +137,7 @@ export default function DetailsStep({
               name="note"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Note</FormLabel>
+                  <FormLabel>Note(optional)</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="Enter note details"

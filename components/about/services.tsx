@@ -11,6 +11,7 @@ import {
   Stethoscope,
   Microscope,
 } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -119,8 +120,9 @@ export default function Services() {
                     </div>
                   ))}
                 </div>
-
-                <Button className="mt-8">Get Appointment</Button>
+                <Link href="/booking" className="text-sm font-bold">
+                  <Button className="mt-8">Get Appointment</Button>
+                </Link>
               </div>
             </TabsContent>
           ))}
