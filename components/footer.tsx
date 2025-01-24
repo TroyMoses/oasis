@@ -103,7 +103,7 @@ export default function Footer() {
             </h3>
             <div className="space-y-4">
               <div>
-                <h4 className="text-gray-400 mb-2">Kanjokya Street</h4>
+                <h4 className="text-gray-400 mb-2">Makerer Kavule</h4>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15958.990273909652!2d32.5719775!3d0.341217!3m2!1i1024!2i768!4f13.1!2m1!1soasis%20dental%20clinic!5e0!3m2!1sen!2sug!4v1737671094059!5m2!1sen!2sug"
                   width="100%"
