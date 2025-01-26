@@ -11,7 +11,7 @@ const team = [
     image: "/doc1.jpg",
   },
   {
-    name: "Mr.John Doe",
+    name: "Mr. John Doe",
     role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening, teeth cleaning, teeth extraction etc",
     phone: "0707836946",
     image: "/doc2.jpg",

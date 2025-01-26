@@ -95,7 +95,7 @@ export default function Footer() {
           {/* Maps Section */}
           <div>
             <h3 className="text-gray-200 font-semibold mb-4 uppercase">
-              Our Locations
+              Our Location
             </h3>
             <div className="space-y-4">
               <div>

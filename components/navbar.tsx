@@ -24,7 +24,7 @@ export default function Navbar() {
             alt="Oasis Dental Clinic"
             width={180}
             height={50}
-            className="w-[120px] h-[120px]"
+            className="w-[90px] h-[70px]"
           />
         </Link>
 
