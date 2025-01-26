@@ -22,15 +22,15 @@ export default function Footer() {
               Location
             </h3>
             <div className="space-y-2">
-              <h4 className="text-gray-500">Kanjokya</h4>
+              <h4 className="text-gray-500">Makerere Kavule</h4>
               <p className="text-gray-500">
-                Plot 56, Kanjokya Street, Kamwokya near Ark House.
+                Head Offices Station;
               </p>
-
-              <h4 className="text-gray-500 mt-4">City center</h4>
-              <p className="text-gray-500">Bhatia chambers.</p>
               <p className="text-gray-500">
-                Plot 5 Parliamentary avenue, Kampala.
+                Next to National Unity Platform,
+              </p>
+              <p className="text-gray-500">
+                Near Tosha Petrol Station.
               </p>
             </div>
 
@@ -38,30 +38,26 @@ export default function Footer() {
               <h4 className="text-gray-200 mb-2 uppercase">Contacts</h4>
               <div className="space-y-2">
                 <Link
-                  href="mailto:info@oasisdentalclinic.com"
+                  href="mailto:oasisdentalspa256@gmail.com"
                   className="text-gray-500 hover:text-gray-400 flex items-center gap-2"
                 >
                   <Mail className="h-4 w-4" />
-                  info@oasisdentalclinic.com
+                  oasisdentalspa256@gmail.com
                 </Link>
                 <Link
-                  href="tel:+256700624015"
+                  href="tel:+256752136615"
                   className="text-gray-500 hover:text-gray-400 flex items-center gap-2"
                 >
                   <Phone className="h-4 w-4" />
-                  +256 700 624 015
+                  +256 752 136615
                 </Link>
                 <Link
-                  href="tel:+2567629639308"
+                  href="tel:+256776295077"
                   className="text-gray-500 hover:text-gray-400 flex items-center gap-2"
                 >
                   <Phone className="h-4 w-4" />
-                  +256 762 939 942
+                  +256 776 295077
                 </Link>
-                <p className="text-gray-500 flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  +256 772 639308 (WhatsApp)
-                </p>
               </div>
             </div>
           </div>
@@ -99,13 +95,13 @@ export default function Footer() {
           {/* Maps Section */}
           <div>
             <h3 className="text-gray-200 font-semibold mb-4 uppercase">
-              Our Locations
+              Our Location
             </h3>
             <div className="space-y-4">
               <div>
                 <h4 className="text-gray-400 mb-2">Makerer Kavule</h4>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15958.990273909652!2d32.5719775!3d0.341217!3m2!1i1024!2i768!4f13.1!2m1!1soasis%20dental%20clinic!5e0!3m2!1sen!2sug!4v1737671094059!5m2!1sen!2sug"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.490583134029!2d32.55795677770996!3d0.3466640000000188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb689a09f443%3A0xd111c355a38c1daa!2sOasis%20Dental%20SPA!5e0!3m2!1sen!2sug!4v1737908347688!5m2!1sen!2sug"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -125,7 +121,7 @@ export default function Footer() {
         <div className="container py-6 md:px-20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400">
-              Oasis Dental Clinic © 2025 | All rights reserved
+              Oasis Dental SPA © 2025 | All rights reserved
             </p>
             <div className="flex gap-4 md:mr-[165px]">
               <Link href="#" className="text-gray-400 hover:text-primary">

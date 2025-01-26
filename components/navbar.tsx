@@ -18,12 +18,13 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2 mt-7 ml-5">
+        <Link href="/" className="flex items-center space-x-2 ml-10">
           <Image
             src="/logo.png"
             alt="Oasis Dental Clinic"
             width={180}
             height={50}
+            className="w-[90px] h-[70px]"
           />
         </Link>
 
@@ -49,8 +50,8 @@ export default function Navbar() {
           <div className="flex items-center space-x-2">
             <Phone className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium">Call Us</span>
-            <Link href="tel:+256762939942" className="text-sm font-bold">
-              +256 762 939942
+            <Link href="tel:+256752136615" className="text-sm font-bold">
+              +256 752 136615
             </Link>
           </div>
           <Link href="/booking" className="text-sm font-bold">

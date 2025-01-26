@@ -85,7 +85,7 @@ export default function ContactForm() {
           {/* Map */}
           <div className="h-[600px] rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15958.990273909652!2d32.5719775!3d0.341217!3m2!1i1024!2i768!4f13.1!2m1!1soasis%20dental%20clinic!5e0!3m2!1sen!2sug!4v1737671094059!5m2!1sen!2sug"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.490583134029!2d32.55795677770996!3d0.3466640000000188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb689a09f443%3A0xd111c355a38c1daa!2sOasis%20Dental%20SPA!5e0!3m2!1sen!2sug!4v1737908347688!5m2!1sen!2sug"
               width="100%"
               height="100%"
               style={{ border: 0 }}

@@ -15,12 +15,12 @@ import Autoplay from "embla-carousel-autoplay";
 const banners = [
   {
     id: 1,
-    image: "/banner1.jpg",
+    image: "/2.jpg",
     alt: "banner 1",
   },
   {
     id: 2,
-    image: "/banner2.jpg",
+    image: "/examination.jpg",
     alt: "banner 2",
   },
 ];
