@@ -5,17 +5,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Our Address",
-    details: ["kisaasi mall"],
+    details: ["Makerere Kavule"],
   },
   {
     icon: Phone,
     title: "Our Phone",
-    details: ["Office Phone: +256 762 939942", "Mobile: +256 700 624015"],
+    details: ["Office Phone: +256 752 136615", "Mobile: +256 776 295077"],
   },
   {
     icon: Mail,
     title: "Our Email",
-    details: ["Main Email: oasisdentalclinic@gmail.com"],
+    details: ["Main Email: oasisdentalspa256@gmail.com"],
   },
 ];
 

@@ -5,22 +5,22 @@ import { Phone } from "lucide-react";
 
 const team = [
   {
-    name: "Ms. Angel",
-    role: "Fillings, Dental surgery, Orthodontic treatment, Root canals,Teeth whitening,Teeth cleaning,Teeth Extraction etc",
-    phone: "0705812050",
+    name: "Ms. Jane Doe",
+    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening, teeth cleaning, teeth extraction etc",
+    phone: "0794812050",
     image: "/doc1.jpg",
   },
   {
-    name: "Mr.Tayebwa Darius",
-    role: "Fillings, Dental surgery, Orthodontic treatment, Root canals,Teeth whitening,Teeth cleaning,Teeth Extraction etc",
-    phone: "0709966946",
-    image: "/doc1.jpg",
+    name: "Mr.John Doe",
+    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening, teeth cleaning, teeth extraction etc",
+    phone: "0707836946",
+    image: "/doc2.jpg",
   },
   {
-    name: "Dentist Gad",
-    role: "Our Prosthodontist.Specialized in teeth replacement,Dental implants,Veneers, Dentures,Crowns and Bridges etc",
-    phone: "0788127374",
-    image: "/doc1.jpg",
+    name: "Dentist Doe",
+    role: "Our Prosthodontist. Specialized in teeth replacement, dental implants, veneers, dentures, crowns and bridges etc",
+    phone: "0788877374",
+    image: "/doc3.jpg",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Team() {
     <section className="py-16 px-10">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Professional Dentists at Dental solutions Kampala
+          Professional Dentists at Oasis Dental Clinic
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member) => (

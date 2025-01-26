@@ -5,25 +5,31 @@ import { SmileIcon as Tooth, FileText, Crown, Microscope } from "lucide-react"
 const services = [
   {
     icon: Tooth,
-    title: "Dental Braces",
+    title: "Dental Examination",
     description:
       "Looking for orthordontic experts in Kampala for teeth alignment? Consider a dental solutions kampala clinic near you. Dental braces are a popular treatment option for straightening teeth and correcting misalignment. Book an appointment with our",
   },
   {
     icon: FileText,
-    title: "Root Canal Treatment",
+    title: "Extraction, Automatic Restoration",
     description:
       "Looking for root canal treatment/endodontic specialist in kampala uganda to save your badly damaged tooth? Book an appointment at Dental Solutions Kampala for expert care. We take careful procedures to repair and save your tooth, instead",
   },
   {
     icon: Crown,
-    title: "Dental Crowns",
+    title: "Scaling and Washing",
     description:
       "Looking for a dental crown and bridge work services near me in Kampala uganda? look no further than Dental solutions Kampala,we provide expert dental crowns and bridge procedures to restore your",
   },
   {
     icon: Microscope,
     title: "Teeth Whitening",
+    description:
+      "Looking for teeth whitening services in Kampala? Visit our dental clinic and let our expert dentists brighten your smile. We offer the best teeth whitening services to give you a dazzling smile. Find a dentist near you and",
+  },
+  {
+    icon: Microscope,
+    title: "Fillings",
     description:
       "Looking for teeth whitening services in Kampala? Visit our dental clinic and let our expert dentists brighten your smile. We offer the best teeth whitening services to give you a dazzling smile. Find a dentist near you and",
   },

@@ -4,19 +4,31 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   {
-    title: "Dental fillings/Cementing",
+    title: "Dental Examination",
     description:
       "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles. They are cemented onto the existing teeth using a bonding agent. Cosmetic fillings can improve the appearance of your smile. Unlike silver-colored",
     image: "/banner1.jpg",
   },
   {
-    title: "Dental Crowns / Bridges",
+    title: "Extraction, Automatic Restoration",
     description:
       "A dental crown or cap is a type of tooth restoration that completely cover or encircles a damaged, decayed, discolored or misshapen tooth or dental implant",
     image: "/banner2.jpg",
   },
   {
-    title: "Teeth Cleaning",
+    title: "Scaling and Washing",
+    description:
+      "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular tooth cleanings are important to",
+    image: "/banner1.jpg",
+  },
+  {
+    title: "Teeth Whitening",
+    description:
+      "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular tooth cleanings are important to",
+    image: "/banner1.jpg",
+  },
+  {
+    title: "Filling",
     description:
       "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular tooth cleanings are important to",
     image: "/banner1.jpg",
@@ -25,8 +37,9 @@ const services = [
 
 export default function DetailedServices() {
   return (
-    <section className="py-16 bg-slate-50 px-10">
+    <section className="pt-10 pb-16 bg-slate-50 px-10">
       <div className="container w-full md:w-[1200px]">
+      <h2 className="text-3xl mb-5 text-center font-bold">Services At Oasis Dental Clinic</h2>
         <div className="grid gap-8">
           {services.map((service, index) => (
             <Card key={index}>
