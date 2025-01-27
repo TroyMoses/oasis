@@ -25,10 +25,13 @@ export default function WhatWeDo() {
   return (
     <section className="py-16 px-10">
       <div className="container">
+        <h2 className="text-3xl font-bold text-center mb-12 uppercase border-b pb-5">
+          About Oasis Dental Clinic
+        </h2>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square bg-slate-100 rounded-lg overflow-hidden">
             <Image
-              src="/banner2.jpg"
+              src="/Whitening.png"
               alt="Best Dental Clinic"
               fill
               className="object-cover"

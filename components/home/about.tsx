@@ -8,7 +8,7 @@ export default function About() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <Image
-            src="/about.jpg"
+            src="/Implants.png"
             alt="Dental procedure"
             width={600}
             height={400}

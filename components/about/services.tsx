@@ -81,7 +81,7 @@ export default function Services() {
   return (
     <section className="py-16 bg-slate-50 px-12">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Services Overview</h2>
 
         <Tabs defaultValue={services[0].id} onValueChange={setActiveTab}>
           <TabsList className="grid grid-cols-2 md:grid-cols-5 h-auto p-0 bg-transparent gap-2">

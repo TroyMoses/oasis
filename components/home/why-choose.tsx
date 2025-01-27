@@ -44,11 +44,11 @@ export default function WhyChoose() {
             </Link>
           </div>
           <Image
-            src="/why.jpg"
+            src="/Whitening.png"
             alt="Dental clinic reception"
             width={600}
             height={400}
-            className="rounded-lg h-[380px] w-[400px] ml-28 hidden md:block"
+            className="rounded-lg h-[380px] w-[450px] ml-28 hidden md:block"
           />
         </div>
       </div>
