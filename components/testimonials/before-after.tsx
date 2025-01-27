@@ -25,7 +25,7 @@ export default function BeforeAfter() {
     <section className="py-16 px-10 bg-slate-50">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Testimonials</h2>
+          <h2 className="text-3xl text-blue-800 font-bold mb-4">Testimonials</h2>
           <p className="text-muted-foreground">
             Take a look at our work before and after.
           </p>

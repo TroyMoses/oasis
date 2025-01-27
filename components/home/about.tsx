@@ -8,14 +8,14 @@ export default function About() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <Image
-            src="/about.jpg"
+            src="/Implants.png"
             alt="Dental procedure"
             width={600}
             height={400}
             className="rounded-lg h-[300px] w-[550px] ml-5 md:ml-10"
           />
           <div className="pl-6">
-            <h2 className="text-3xl font-bold mb-6">
+            <h2 className="text-3xl text-blue-800 font-bold mb-6">
               About Oasis Dental Clinic
             </h2>
             <p className="text-muted-foreground mb-6">
@@ -29,9 +29,11 @@ export default function About() {
               and orthodontics.
             </p>
             {/* Link button to the about page */}
-            <Link href="/about">
-              <Button className="mt-2 md:mt-5">Explore More</Button>
-            </Link>
+            <div className="text-center md:text-left">
+              <Link href="/about">
+                <Button className="mt-2 md:mt-5 bg-blue-800">Explore More</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

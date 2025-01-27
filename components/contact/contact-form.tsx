@@ -98,7 +98,7 @@ export default function ContactForm() {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <div className="mb-8">
-              <h2 className="text-2xl font-bold mb-2">
+              <h2 className="text-2xl text-blue-800 text-center md:text-left font-bold mb-2">
                 Have Questions? Get in Touch!
               </h2>
               <p className="text-muted-foreground">
@@ -118,7 +118,7 @@ export default function ContactForm() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>
+                        <FormLabel className="text-blue-800">
                           Full Name<span className="text-red-500">*</span>
                         </FormLabel>
                         <FormControl>
@@ -133,7 +133,7 @@ export default function ContactForm() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>
+                        <FormLabel className="text-blue-900">
                           Email<span className="text-red-500">*</span>
                         </FormLabel>
                         <FormControl>
@@ -155,7 +155,7 @@ export default function ContactForm() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Phone Number</FormLabel>
+                        <FormLabel className="text-blue-900">Phone Number</FormLabel>
                         <FormControl>
                           <Input type="tel" placeholder="Number" {...field} />
                         </FormControl>
@@ -168,7 +168,7 @@ export default function ContactForm() {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Select Subject</FormLabel>
+                        <FormLabel className="text-blue-900">Select Subject</FormLabel>
                         <Select
                           onValueChange={field.onChange}
                           defaultValue={field.value}
@@ -200,7 +200,7 @@ export default function ContactForm() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Your message or question</FormLabel>
+                      <FormLabel className="text-blue-900">Your message or question</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="Your message"
@@ -215,7 +215,7 @@ export default function ContactForm() {
 
                 <Button
                   type="submit"
-                  className="w-full"
+                  className="w-full bg-blue-800"
                   disabled={form.formState.isSubmitting}
                 >
                   {form.formState.isSubmitting

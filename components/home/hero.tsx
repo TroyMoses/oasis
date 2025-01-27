@@ -15,12 +15,12 @@ import Autoplay from "embla-carousel-autoplay";
 const banners = [
   {
     id: 1,
-    image: "/2.jpg",
+    image: "/banner1.png",
     alt: "banner 1",
   },
   {
     id: 2,
-    image: "/examination.jpg",
+    image: "/banner2.png",
     alt: "banner 2",
   },
 ];
@@ -50,7 +50,7 @@ export default function Hero() {
                     alt={banner.alt}
                     width={1920}
                     height={600}
-                    className="w-full object-cover h-[460px]"
+                    className="w-full object-cover md:h-[460px]"
                   />
                 </Card>
               </div>

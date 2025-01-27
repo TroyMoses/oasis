@@ -5,19 +5,19 @@ import { Phone } from "lucide-react";
 const team = [
   {
     name: "Ms. Angel",
-    role: "Fillings, Dental surgery, Orthodontic treatment, Root canals,Teeth whitening,Teeth cleaning,Teeth Extraction etc",
+    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
     phone: "0705812050",
     image: "/doc1.jpg",
   },
   {
     name: "Mr.Tayebwa Darius",
-    role: "Fillings, Dental surgery, Orthodontic treatment, Root canals,Teeth whitening,Teeth cleaning,Teeth Extraction etc",
+    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
     phone: "0709966946",
     image: "/doc2.jpg",
   },
   {
     name: "Dentist Gad",
-    role: "Our Prosthodontist.Specialized in teeth replacement,Dental implants,Veneers, Dentures,Crowns and Bridges etc",
+    role: "Our Prosthodontist. Specialized in teeth replacement, dental implants, veneers.",
     phone: "0788127374",
     image: "/doc3.jpg",
   },
@@ -27,7 +27,7 @@ export default function Team() {
   return (
     <section className="py-16 bg-slate-50">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl text-blue-800 font-bold text-center mb-12">
           Professional Dentists at Oasis Dental Clinic
         </h2>
         <div className="grid md:grid-cols-3 gap-8 w-full">
@@ -44,7 +44,7 @@ export default function Team() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+              <h3 className="text-xl font-semibold text-blue-800 mb-2">{member.name}</h3>
               <p className="text-muted-foreground mb-4">{member.role}</p>
               <Button variant="outline" className="w-full">
                 <Phone className="mr-2 h-4 w-4" />

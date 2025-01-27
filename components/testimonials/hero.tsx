@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <section className="relative h-[400px] bg-cover bg-center flex items-center bg-gray-300"
+    <section className="relative h-[400px] md:h-[460px] bg-cover bg-center flex items-center bg-gray-300"
     style={{
-      backgroundImage: `url('/banner1.jpg')`,
+      backgroundImage: `url('/Whitening.png')`,
     }}>
       <div className="absolute inset-0 bg-black/50" />
       <div className="container relative z-10">

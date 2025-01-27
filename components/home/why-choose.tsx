@@ -9,14 +9,14 @@ export default function WhyChoose() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-8">
+            <h2 className="text-3xl text-center md:text-left text-blue-800 font-bold mb-8">
               Why Choose Oasis Dental Clinic?
             </h2>
             <div className="grid gap-8">
               <div className="flex gap-4">
-                <ClipboardList className="h-8 w-8 text-primary flex-shrink-0" />
+                <ClipboardList className="h-8 w-8 text-blue-800 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">
+                  <h3 className="text-xl text-blue-800 font-semibold mb-2">
                     Dental Clinic Near Me
                   </h3>
                   <p className="text-muted-foreground">
@@ -26,9 +26,9 @@ export default function WhyChoose() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <Users className="h-8 w-8 text-primary flex-shrink-0" />
+                <Users className="h-8 w-8 text-blue-800 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">
+                  <h3 className="text-xl text-blue-800 font-semibold mb-2">
                     Best Dentists Near Me
                   </h3>
                   <p className="text-muted-foreground">
@@ -39,16 +39,18 @@ export default function WhyChoose() {
                 </div>
               </div>
             </div>
-            <Link href="/booking" className="text-sm font-bold">
-              <Button className="mt-8">Book Appointment</Button>
-            </Link>
+            <div className="text-center md:text-left">
+              <Link href="/booking" className="text-sm font-bold">
+                <Button className="mt-8 bg-blue-800">Book Appointment</Button>
+              </Link>
+            </div>
           </div>
           <Image
-            src="/why.jpg"
+            src="/Whitening.png"
             alt="Dental clinic reception"
             width={600}
             height={400}
-            className="rounded-lg h-[380px] w-[400px] ml-28 hidden md:block"
+            className="rounded-lg h-[380px] w-[450px] ml-28 hidden md:block"
           />
         </div>
       </div>

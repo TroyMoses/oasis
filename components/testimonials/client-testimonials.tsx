@@ -27,11 +27,8 @@ export default function ClientTestimonials() {
     <section className="py-16 px-10">
       <div className="container">
         <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">CLIENT TESTIMONIALS</p>
-          <h2 className="text-3xl font-bold mb-4">What our clients say</h2>
-          <p className="text-muted-foreground">
-            What Clients say about Dental Solutions Kampala.
-          </p>
+          <p className="text-blue-800 font-medium mb-2">CLIENT TESTIMONIALS</p>
+          <h2 className="text-3xl text-blue-800 font-bold mb-4">What our clients say about us</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -44,8 +41,8 @@ export default function ClientTestimonials() {
                     <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
                   </Avatar>
                   <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="font-semibold text-blue-800">{testimonial.name}</div>
+                    <div className="text-sm text-blue-800">
                       {testimonial.role}
                     </div>
                   </div>

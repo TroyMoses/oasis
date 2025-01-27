@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Phone, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,12 +12,37 @@ import { cn } from "@/lib/utils";
 export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white">
-      <div className="container flex h-20 items-center justify-between">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 w-full border-b transition-all duration-300",
+        isSticky
+          ? "bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-md"
+          : "bg-white"
+      )}
+    >
+      <div
+        className={cn(
+          "container flex h-20 items-center justify-between",
+          isSticky && "py-2"
+        )}
+      >
         <Link href="/" className="flex items-center space-x-2 ml-10">
           <Image
             src="/logo.png"
@@ -48,14 +73,17 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <Phone className="h-4 w-4 text-primary" />
+            <Phone className="h-4 w-4 text-blue-800" />
             <span className="text-sm font-medium">Call Us</span>
-            <Link href="tel:+256752136615" className="text-sm font-bold">
+            <Link
+              href="tel:+256752136615"
+              className="text-sm font-bold hover:text-blue-800"
+            >
               +256 752 136615
             </Link>
           </div>
           <Link href="/booking" className="text-sm font-bold">
-            <Button>Book Appointment</Button>
+            <Button className="bg-blue-800">Book Appointment</Button>
           </Link>
         </div>
 
@@ -104,12 +132,15 @@ export default function Navbar() {
               <div className="flex items-center space-x-2 mb-4">
                 <Phone className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium">Call Us</span>
-                <Link href="tel:+256762939942" className="text-sm font-bold">
-                  +256 762 939942
+                <Link
+                  href="tel:+256752136615"
+                  className="text-sm font-bold hover:text-blue-800"
+                >
+                  +256 752 136615
                 </Link>
               </div>
               <Link href="/booking" className="mt-2">
-                <Button className="w-full">Book Appointment</Button>
+                <Button className="w-full bg-blue-500">Book Appointment</Button>
               </Link>
             </div>
           </SheetContent>
@@ -131,8 +162,8 @@ function NavLink({ href, active, children, onClick }: NavLinkProps) {
     <Link
       href={href}
       className={cn(
-        "text-base font-medium transition-colors hover:text-primary",
-        active ? "text-primary" : "text-muted-foreground"
+        "text-base font-medium transition-colors hover:text-blue-800",
+        active ? "text-blue-800" : "text-muted-foreground"
       )}
       onClick={onClick}
     >
