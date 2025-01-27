@@ -48,14 +48,14 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <Phone className="h-4 w-4 text-primary" />
+            <Phone className="h-4 w-4 text-blue-800" />
             <span className="text-sm font-medium">Call Us</span>
-            <Link href="tel:+256752136615" className="text-sm font-bold">
+            <Link href="tel:+256752136615" className="text-sm font-bold hover:text-blue-800">
               +256 752 136615
             </Link>
           </div>
           <Link href="/booking" className="text-sm font-bold">
-            <Button>Book Appointment</Button>
+            <Button className="bg-blue-800">Book Appointment</Button>
           </Link>
         </div>
 
@@ -104,12 +104,12 @@ export default function Navbar() {
               <div className="flex items-center space-x-2 mb-4">
                 <Phone className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium">Call Us</span>
-                <Link href="tel:+256762939942" className="text-sm font-bold">
-                  +256 762 939942
+                <Link href="tel:+256752136615" className="text-sm font-bold hover:text-blue-800">
+                  +256 752 136615
                 </Link>
               </div>
               <Link href="/booking" className="mt-2">
-                <Button className="w-full">Book Appointment</Button>
+                <Button className="w-full bg-blue-500">Book Appointment</Button>
               </Link>
             </div>
           </SheetContent>
@@ -131,8 +131,8 @@ function NavLink({ href, active, children, onClick }: NavLinkProps) {
     <Link
       href={href}
       className={cn(
-        "text-base font-medium transition-colors hover:text-primary",
-        active ? "text-primary" : "text-muted-foreground"
+        "text-base font-medium transition-colors hover:text-blue-800",
+        active ? "text-blue-800" : "text-muted-foreground"
       )}
       onClick={onClick}
     >

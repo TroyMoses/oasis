@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="relative h-[400px] bg-cover bg-center flex items-center"
+      className="relative h-[400px] md:h-[460px] bg-cover bg-center flex items-center"
       style={{
         backgroundImage: `url('/2.jpg')`,
       }}
@@ -12,7 +12,7 @@ export default function Hero() {
           Contact Us
         </h1>
         <h1 className="text-md md:text-xl lg:text-2xl ml-20 mt-4 text-white">
-          Get in touch with us
+          Get in touch with Oasis Dental Clinic
         </h1>
       </div>
     </section>

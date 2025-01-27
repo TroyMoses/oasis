@@ -27,8 +27,8 @@ export default function WorkProcess() {
     <section className="py-16 px-10">
       <div className="container">
         <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">WORK PROCESS</p>
-          <h2 className="text-3xl font-bold">
+          <p className="text-blue-800 font-medium mb-2">WORK PROCESS</p>
+          <h2 className="text-blue-500 text-3xl font-bold">
             We Complete Every Step Carefully
           </h2>
         </div>
@@ -44,11 +44,11 @@ export default function WorkProcess() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2">{process.title}</h3>
+              <h3 className="text-xl text-blue-900 font-semibold mb-2">{process.title}</h3>
               <p className="text-muted-foreground mb-4">
                 {process.description}
               </p>
-              <Button variant="outline">Read More</Button>
+              <Button variant="default" className="bg-blue-500">Read More</Button>
             </div>
           ))}
         </div>

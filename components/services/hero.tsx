@@ -1,9 +1,9 @@
 export default function Hero() {
   return (
     <section
-      className="relative h-[400px] bg-cover bg-center flex items-center"
+      className="relative h-[400px] md:h-[460px] bg-cover bg-center flex items-center"
       style={{
-        backgroundImage: `url('/2.jpg')`,
+        backgroundImage: `url('/5.jpg')`,
       }}
     >
       <div className="absolute inset-0 bg-black/50" />

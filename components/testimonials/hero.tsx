@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-[400px] bg-cover bg-center flex items-center bg-gray-300"
+    <section className="relative h-[400px] md:h-[460px] bg-cover bg-center flex items-center bg-gray-300"
     style={{
       backgroundImage: `url('/Whitening.png')`,
     }}>

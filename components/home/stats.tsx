@@ -37,9 +37,9 @@ export default function Stats() {
               key={stat.id}
               className="flex flex-col items-center justify-center p-6 text-center"
             >
-              <stat.icon className="h-7 w-7 mb-4 text-primary" />
-              <h3 className="text-2xl font-bold mb-2">{stat.value}</h3>
-              <p className="text-muted-foreground">{stat.label}</p>
+              <stat.icon className="h-7 w-7 mb-4 text-blue-800" />
+              <h3 className="text-2xl text-blue-800 font-bold mb-2">{stat.value}</h3>
+              <p className="text-muted-foreground ">{stat.label}</p>
             </div>
           ))}
         </div>

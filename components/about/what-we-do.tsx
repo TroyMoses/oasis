@@ -18,14 +18,13 @@ const services = [
   "Dental implants",
   "Teeth whitening",
   "Veneers",
-  "Dentures",
 ];
 
 export default function WhatWeDo() {
   return (
     <section className="py-16 px-10">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12 uppercase border-b pb-5">
+        <h2 className="text-4xl text-blue-500 font-bold text-center mb-12 border-b pb-5">
           About Oasis Dental Clinic
         </h2>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -38,10 +37,10 @@ export default function WhatWeDo() {
             />
             <div className="absolute bottom-0 left-0 right-0 bg-white p-6">
               <div className="flex items-start gap-4">
-                <Award className="h-12 w-12 text-primary flex-shrink-0" />
+                <Award className="h-[60px] w-[60px] text-blue-500 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Best Dental Clinic</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-2xl text-blue-500 font-bold mb-2">Best Dental Clinic</h3>
+                  <p className="text-muted-foreground text-lg">
                     Best Dental Clinic in Kampala for all your dental needs.
                   </p>
                 </div>
@@ -52,10 +51,10 @@ export default function WhatWeDo() {
           <div>
             <div className="space-y-6">
               <div>
-                <p className="text-primary text-2xl font-medium mb-2">
+                <p className="text-blue-800 text-2xl font-medium mb-2">
                   WHAT WE DO
                 </p>
-                <h2 className="text-3xl font-bold mb-4">
+                <h2 className="text-3xl text-blue-500 font-bold mb-4">
                   True Healthcare For Your Family
                 </h2>
               </div>
@@ -63,7 +62,7 @@ export default function WhatWeDo() {
               <div>
                 <ul className="list-disc space-y-4 pl-6">
                   {services.map((service, index) => (
-                    <li key={index} className="text-muted-foreground">
+                    <li key={index} className="text-muted-foreground text-lg">
                       {service}
                     </li>
                   ))}
@@ -73,8 +72,8 @@ export default function WhatWeDo() {
               <div className="grid sm:grid-cols-2 gap-4 mt-8">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span className="text-sm">{feature}</span>
+                    <CheckCircle2 className="h-5 w-5 text-blue-500" />
+                    <span className="text-sm text-blue-500">{feature}</span>
                   </div>
                 ))}
               </div>

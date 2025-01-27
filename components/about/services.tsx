@@ -81,7 +81,7 @@ export default function Services() {
   return (
     <section className="py-16 bg-slate-50 px-12">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Services Overview</h2>
+        <h2 className="text-3xl text-blue-500 font-bold text-center mb-12">Services Overview</h2>
 
         <Tabs defaultValue={services[0].id} onValueChange={setActiveTab}>
           <TabsList className="grid grid-cols-2 md:grid-cols-5 h-auto p-0 bg-transparent gap-2">
@@ -89,7 +89,7 @@ export default function Services() {
               <TabsTrigger
                 key={service.id}
                 value={service.id}
-                className={`flex flex-col items-center gap-2 p-6 data-[state=active]:bg-primary data-[state=active]:text-white`}
+                className={`flex flex-col text-blue-500 items-center gap-2 p-6 data-[state=active]:bg-blue-500 data-[state=active]:text-white`}
               >
                 <service.icon className="h-6 w-6" />
                 <span className="text-sm text-center">{service.title}</span>
@@ -100,19 +100,19 @@ export default function Services() {
           {services.map((service) => (
             <TabsContent key={service.id} value={service.id} className="mt-8">
               <div className="bg-white p-6 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <h3 className="text-2xl text-blue-500 font-bold mb-4">{service.title}</h3>
                 <p className="text-muted-foreground mb-8">
                   {service.description}
                 </p>
 
-                <div className="space-y-6 w-[400px] md:w-[800px]">
+                <div className="space-y-6 w-[300px] md:w-[800px]">
                   {service.stats.map((stat, index) => (
                     <div key={index}>
                       <div className="flex justify-between mb-2">
-                        <span className="text-sm font-medium">
+                        <span className="text-sm text-blue-500 font-medium">
                           {stat.label}
                         </span>
-                        <span className="text-sm font-medium">
+                        <span className="text-sm text-blue-500 font-medium">
                           {stat.value}%
                         </span>
                       </div>
@@ -121,7 +121,7 @@ export default function Services() {
                   ))}
                 </div>
                 <Link href="/booking" className="text-sm font-bold">
-                  <Button className="mt-8">Get Appointment</Button>
+                  <Button className="mt-8 bg-blue-500">Get Appointment</Button>
                 </Link>
               </div>
             </TabsContent>
