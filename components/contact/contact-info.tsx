@@ -24,18 +24,18 @@ export default function ContactInfo() {
     <section className="py-16 px-10">
       <div className="container">
         <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2">GET IN TOUCH</p>
-          <h2 className="text-3xl font-bold">For All Your dental Needs</h2>
+          <p className="text-blue-800 font-medium mb-2">GET IN TOUCH</p>
+          <h2 className="text-3xl text-blue-800 font-bold">For All Your dental Needs</h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {contactInfo.map((info, index) => (
             <Card key={index}>
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <info.icon className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-blue-800 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <info.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">{info.title}</h3>
+                <h3 className="text-xl text-blue-800 font-bold mb-4">{info.title}</h3>
                 {info.details.map((detail, idx) => (
                   <p key={idx} className="text-muted-foreground">
                     {detail}
