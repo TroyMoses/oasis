@@ -9,7 +9,7 @@ export default function WhyChoose() {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl text-blue-800 font-bold mb-8">
+            <h2 className="text-3xl text-center md:text-left text-blue-800 font-bold mb-8">
               Why Choose Oasis Dental Clinic?
             </h2>
             <div className="grid gap-8">
@@ -39,9 +39,11 @@ export default function WhyChoose() {
                 </div>
               </div>
             </div>
-            <Link href="/booking" className="text-sm font-bold">
-              <Button className="mt-8 bg-blue-800">Book Appointment</Button>
-            </Link>
+            <div className="text-center md:text-left">
+              <Link href="/booking" className="text-sm font-bold">
+                <Button className="mt-8 bg-blue-800">Book Appointment</Button>
+              </Link>
+            </div>
           </div>
           <Image
             src="/Whitening.png"

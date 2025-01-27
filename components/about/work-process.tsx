@@ -1,24 +1,23 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 const processes = [
   {
     title: "Cosmetic Dentistry",
     description:
-      "Dentistry is no longer just a case of filling and taking out teeth. Nowadays many people",
-    image: "/banner1.jpg",
+      "Dentistry is no longer just a case of filling and taking out teeth. Nowadays many people. Dentistry is no longer just a case of filling and taking out teeth. Nowadays many people.",
+    image: "/2.jpg",
   },
   {
     title: "Pediatric Dentistry",
     description:
-      "Pediatric dentistry is the branch of dentistry dealing with children from birth through adolescence.",
-    image: "/banner2.jpg",
+      "Pediatric dentistry is the branch of dentistry dealing with children from birth through adolescence. Pediatric dentistry is the branch of dentistry dealing with children from birth through adolescence.",
+    image: "/Whitening.png",
   },
   {
     title: "Dental Implants",
     description:
-      "If you're missing one or more teeth, you have choices in restorative care. However, dental implants",
-    image: "/banner1.jpg",
+      "If you're missing one or more teeth, you have choices in restorative care. However, dental implants. If you're missing one or more teeth, you have choices in restorative care.",
+    image: "/examination.jpg",
   },
 ];
 
@@ -38,17 +37,16 @@ export default function WorkProcess() {
             <div key={index} className="text-center">
               <div className="relative h-48 mb-6">
                 <Image
-                  src={process.image || "/placeholder.svg"}
+                  src={process.image}
                   alt={process.title}
                   fill
-                  className="object-contain"
+                  className="object-cover w-[400px] rounded-md"
                 />
               </div>
               <h3 className="text-xl text-blue-900 font-semibold mb-2">{process.title}</h3>
               <p className="text-muted-foreground mb-4">
                 {process.description}
               </p>
-              <Button variant="default" className="bg-blue-500">Read More</Button>
             </div>
           ))}
         </div>

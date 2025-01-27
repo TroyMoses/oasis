@@ -33,7 +33,7 @@ export default function WhatWeDo() {
               src="/Whitening.png"
               alt="Best Dental Clinic"
               fill
-              className="object-cover"
+              className="object-cover rounded-sm"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-white p-6">
               <div className="flex items-start gap-4">
@@ -50,7 +50,7 @@ export default function WhatWeDo() {
 
           <div>
             <div className="space-y-6">
-              <div>
+              <div className="text-center md:text-left">
                 <p className="text-blue-800 text-2xl font-medium mb-2">
                   WHAT WE DO
                 </p>

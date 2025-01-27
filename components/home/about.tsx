@@ -29,9 +29,11 @@ export default function About() {
               and orthodontics.
             </p>
             {/* Link button to the about page */}
-            <Link href="/about">
-              <Button className="mt-2 md:mt-5 bg-blue-800">Explore More</Button>
-            </Link>
+            <div className="text-center md:text-left">
+              <Link href="/about">
+                <Button className="mt-2 md:mt-5 bg-blue-800">Explore More</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

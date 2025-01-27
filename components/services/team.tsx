@@ -28,7 +28,7 @@ export default function Team() {
   return (
     <section className="py-16 px-10">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl text-blue-800 font-bold text-center mb-12">
           Professional Dentists at Oasis Dental Clinic
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -43,7 +43,7 @@ export default function Team() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                <h3 className="text-xl text-blue-800 font-bold mb-2">{member.name}</h3>
                 <p className="text-muted-foreground mb-4">{member.role}</p>
                 <Button variant="outline" className="w-full">
                   <Phone className="mr-2 h-4 w-4" />
