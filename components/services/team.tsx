@@ -6,19 +6,19 @@ import { Phone } from "lucide-react";
 const team = [
   {
     name: "Ms. Jane Doe",
-    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening, teeth cleaning, teeth extraction etc",
+    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
     phone: "0794812050",
     image: "/doc1.jpg",
   },
   {
     name: "Mr. John Doe",
-    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening, teeth cleaning, teeth extraction etc",
+    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
     phone: "0707836946",
     image: "/doc2.jpg",
   },
   {
     name: "Dentist Doe",
-    role: "Our Prosthodontist. Specialized in teeth replacement, dental implants, veneers, dentures, crowns and bridges etc",
+    role: "Our Prosthodontist. Specialized in teeth replacement, dental implants, veneers.",
     phone: "0788877374",
     image: "/doc3.jpg",
   },
