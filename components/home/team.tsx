@@ -1,25 +1,26 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import Link from "next/link";
 
 const team = [
   {
-    name: "Ms. Jane Doe",
-    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
-    phone: "0794812050",
-    image: "/doc1.jpg",
+    name: "Dr. Moses",
+    role: "Fillings, dental surgery.",
+    phone: "0701020304",
+    image: "/moses.jpg",
   },
   {
-    name: "Mr. John Doe",
-    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
-    phone: "0707836946",
-    image: "/doc2.jpg",
+    name: "Nurse Cathy",
+    role: "Orthodontic treatment.",
+    phone: "0701020304",
+    image: "/cathy.jpg",
   },
   {
-    name: "Dentist Doe",
-    role: "Our Prosthodontist. Specialized in teeth replacement, dental implants, veneers.",
+    name: "Dr. Francis",
+    role: "Our Prosthodontist.",
     phone: "0788877374",
-    image: "/doc3.jpg",
+    image: "/francis.jpg",
   },
 ];
 
@@ -30,7 +31,7 @@ export default function Team() {
         <h2 className="text-3xl text-blue-800 font-bold text-center mb-12">
           Professional Dentists at Oasis Dental Clinic
         </h2>
-        <div className="grid md:grid-cols-3 gap-8 w-full">
+        <div className="grid md:grid-cols-3 gap-8 w-full px-5 md:px-20">
           {team.map((member) => (
             <div
               key={member.name}
@@ -52,6 +53,13 @@ export default function Team() {
               </Button>
             </div>
           ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link href="/team">
+            <Button variant="default" className="bg-blue-800">
+              See More Doctors
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

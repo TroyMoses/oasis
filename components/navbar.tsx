@@ -66,6 +66,9 @@ export default function Navbar() {
           <NavLink href="/testimonials" active={pathname === "/testimonials"}>
             Testimonials
           </NavLink>
+          <NavLink href="/team" active={pathname === "/team"}>
+            Doctors
+          </NavLink>
           <NavLink href="/contact" active={pathname === "/contact"}>
             Contact Us
           </NavLink>

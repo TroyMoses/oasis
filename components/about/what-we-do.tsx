@@ -30,7 +30,7 @@ export default function WhatWeDo() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square bg-slate-100 rounded-lg overflow-hidden">
             <Image
-              src="/Whitening.png"
+              src="/afande.jpg"
               alt="Best Dental Clinic"
               fill
               className="object-cover rounded-sm"
