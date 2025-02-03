@@ -5,22 +5,34 @@ import { Phone } from "lucide-react";
 
 const team = [
   {
-    name: "Ms. Jane Doe",
-    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
-    phone: "0794812050",
-    image: "/doc1.jpg",
+    name: "Dr. Moses",
+    role: "Fillings, dental surgery.",
+    phone: "0701020304",
+    image: "/moses.jpg",
   },
   {
-    name: "Mr. John Doe",
-    role: "Fillings, dental surgery, orthodontic treatment, root canals, teeth whitening.",
-    phone: "0707836946",
-    image: "/doc2.jpg",
+    name: "Nurse Cathy",
+    role: "Orthodontic treatment.",
+    phone: "0701020304",
+    image: "/cathy.jpg",
   },
   {
-    name: "Dentist Doe",
-    role: "Our Prosthodontist. Specialized in teeth replacement, dental implants, veneers.",
+    name: "Dr. Francis",
+    role: "Our Prosthodontist. Specialized in teeth replacement.",
     phone: "0788877374",
-    image: "/doc3.jpg",
+    image: "/francis.jpg",
+  },
+  {
+    name: "Nurse Flavia",
+    role: "Specialized in dental implants.",
+    phone: "0701020304",
+    image: "/flavia.png",
+  },
+  {
+    name: "Nurse Najwa",
+    role: "Specialized in veneers.",
+    phone: "0701020304",
+    image: "/najwa.jpg",
   },
 ];
 
