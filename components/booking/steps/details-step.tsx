@@ -50,16 +50,17 @@ export default function DetailsStep({
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-lg font-semibold mb-4">Basic Details</h2>
+        <h2 className="text-lg font-semibold mb-4 text-blue-800">Basic Details</h2>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             <div className="grid sm:grid-cols-2 gap-4">
-              <FormField
+              <FormField 
+                
                 control={form.control}
                 name="firstName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>
+                    <FormLabel className="text-blue-800">
                       First Name <span className="text-red-500">*</span>
                     </FormLabel>
                     <FormControl>
@@ -74,7 +75,7 @@ export default function DetailsStep({
                 name="lastName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>
+                    <FormLabel className="text-blue-800">
                       Last Name <span className="text-red-500">*</span>
                     </FormLabel>
                     <FormControl>
@@ -91,7 +92,7 @@ export default function DetailsStep({
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
+                  <FormLabel className="text-blue-800">
                     Email Address <span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
@@ -111,13 +112,13 @@ export default function DetailsStep({
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>
+                  <FormLabel className="text-blue-800">
                     Phone Number <span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
                     <div className="flex">
                       <div className="flex items-center px-3 border rounded-l-md bg-muted">
-                        <span className="text-sm">+256</span>
+                        <span className="text-sm text-blue-800">+256</span>
                       </div>
                       <Input
                         placeholder="Enter your phone number"
@@ -137,7 +138,7 @@ export default function DetailsStep({
               name="note"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Note(optional)</FormLabel>
+                  <FormLabel className="text-blue-800">Note(optional)</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="Enter note details"

@@ -1,24 +1,28 @@
-import { Award, Heart, CheckCircle, Clock } from "lucide-react";
+import { Award, Heart, CheckCircle, Briefcase } from "lucide-react";
 
 const stats = [
   {
+    id: 1,
     icon: Award,
     value: "2",
     label: "Awards Win",
   },
   {
+    id: 2,
     icon: Heart,
-    value: "360+",
+    value: "630+",
     label: "Happy Customers",
   },
   {
+    id: 3,
     icon: CheckCircle,
     value: "100%",
     label: "Satisfaction",
   },
   {
-    icon: Clock,
-    value: "6+",
+    id: 4,
+    icon: Briefcase,
+    value: "5+",
     label: "Years of experience",
   },
 ];
