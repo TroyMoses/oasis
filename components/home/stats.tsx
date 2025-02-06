@@ -10,7 +10,7 @@ const stats = [
   {
     id: 2,
     icon: Heart,
-    value: "360+",
+    value: "630+",
     label: "Happy Customers",
   },
   {
@@ -22,7 +22,7 @@ const stats = [
   {
     id: 4,
     icon: Briefcase,
-    value: "6+",
+    value: "5+",
     label: "Years of experience",
   },
 ];

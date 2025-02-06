@@ -59,7 +59,7 @@ export default function SummaryStep({ bookingData, onBack }: SummaryStepProps) {
       <div className="text-center mb-8">
         <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg
-            className="w-8 h-8 text-primary"
+            className="w-8 h-8 text-blue-800"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -72,7 +72,7 @@ export default function SummaryStep({ bookingData, onBack }: SummaryStepProps) {
             />
           </svg>
         </div>
-        <h2 className="text-xl font-semibold">Summary</h2>
+        <h2 className="text-xl font-semibold text-blue-800">Summary</h2>
         <p className="text-muted-foreground">
           Your appointment booking summary
         </p>
@@ -81,28 +81,28 @@ export default function SummaryStep({ bookingData, onBack }: SummaryStepProps) {
       <div className="space-y-4">
         <div className="grid gap-1">
           <p className="text-sm text-muted-foreground">Customer</p>
-          <p className="font-medium">
+          <p className="font-medium text-blue-800">
             {bookingData.firstName} {bookingData.lastName}
           </p>
         </div>
 
         <div className="grid gap-1">
           <p className="text-sm text-muted-foreground">Service</p>
-          <p className="font-medium">{bookingData.service.name}</p>
+          <p className="font-medium text-blue-800">{bookingData.service.name}</p>
         </div>
 
         <div className="grid gap-1">
           <p className="text-sm text-muted-foreground">Date & Time</p>
-          <p className="font-medium">
+          <p className="font-medium text-blue-800">
             {format(bookingData.date, "MMMM d, yyyy")},{" "}
             {bookingData.timeSlot.start} - {bookingData.timeSlot.end}
           </p>
         </div>
 
-        <div className="border-t pt-4 mt-4">
+        <div className="border-t pt-4 mt-4 text-blue-800">
           <div className="flex justify-between">
             <p className="font-medium">Total Amount Payable</p>
-            <p className="font-bold text-primary">
+            <p className="font-bold">
               UGX{bookingData.service.price.toLocaleString()}
             </p>
           </div>

@@ -41,7 +41,7 @@ export default function BookingStepper({ currentStep }: BookingStepperProps) {
             key={step.id}
             className={cn(
               "flex items-center gap-3 p-3 rounded-lg transition-colors",
-              isActive && "bg-primary text-primary-foreground",
+              isActive && "bg-blue-800 text-primary-foreground",
               isPast && "bg-primary/10"
             )}
           >

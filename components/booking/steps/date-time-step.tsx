@@ -37,7 +37,7 @@ export default function DateTimeStep({
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-lg font-semibold mb-4">Select Date & Time</h2>
+        <h2 className="text-lg text-blue-800 font-semibold mb-4">Select Date & Time</h2>
         <div className="grid lg:grid-cols-[1fr,300px] gap-6">
           <Card className="p-4">
             <Calendar
@@ -46,7 +46,7 @@ export default function DateTimeStep({
               onSelect={(date) =>
                 date && onSelect(date, selectedTimeSlot || timeSlots[0])
               }
-              className="w-full"
+              className="w-full text-blue-800"
               disabled={(date) =>
                 date < new Date() ||
                 date > new Date(new Date().setMonth(new Date().getMonth() + 2))
@@ -57,7 +57,7 @@ export default function DateTimeStep({
           <Card className="p-4">
             <div className="space-y-4">
               <div>
-                <h3 className="font-medium mb-2">Morning</h3>
+                <h3 className="font-medium mb-2 text-blue-800">Morning</h3>
                 <div className="grid grid-cols-2 gap-2">
                   {timeSlots.slice(0, 4).map((slot) => (
                     <Button
@@ -82,7 +82,7 @@ export default function DateTimeStep({
               </div>
 
               <div>
-                <h3 className="font-medium mb-2">Afternoon</h3>
+                <h3 className="font-medium mb-2 text-blue-800">Afternoon</h3>
                 <div className="grid grid-cols-2 gap-2">
                   {timeSlots.slice(4, 8).map((slot) => (
                     <Button
@@ -107,7 +107,7 @@ export default function DateTimeStep({
               </div>
 
               <div>
-                <h3 className="font-medium mb-2">Evening</h3>
+                <h3 className="font-medium mb-2 text-blue-800">Evening</h3>
                 <div className="grid grid-cols-2 gap-2">
                   {timeSlots.slice(8).map((slot) => (
                     <Button
@@ -140,7 +140,7 @@ export default function DateTimeStep({
           <ChevronLeft className="w-4 h-4 mr-2" />
           Go Back
         </Button>
-        <Button onClick={onNext} disabled={!selectedDate || !selectedTimeSlot}>
+        <Button className="bg-blue-800" onClick={onNext} disabled={!selectedDate || !selectedTimeSlot}>
           Next: Basic Details
           <ChevronRight className="w-4 h-4 ml-2" />
         </Button>
