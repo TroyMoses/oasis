@@ -3,7 +3,6 @@ export type ServiceCategory = "ALL" | "Cosmetic Dentistry" | "Endodontics"
 export interface Service {
   id: string
   name: string
-  category: ServiceCategory
   duration: number
   price: number
 }

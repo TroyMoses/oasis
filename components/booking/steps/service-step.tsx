@@ -11,36 +11,36 @@ interface ServiceStepProps {
 
 const categories: ServiceCategory[] = [
   "ALL",
-  "Cosmetic Dentistry",
-  "Endodontics",
 ];
 
 const services: Service[] = [
   {
-    id: "dental-check",
-    name: "Dental Check - Up",
-    category: "Cosmetic Dentistry",
+    id: "dental-examination",
+    name: "Dental Examination",
     duration: 60,
     price: 15000,
   },
   {
-    id: "teeth-whitening",
-    name: "Teeth Whitening",
-    category: "Cosmetic Dentistry",
+    id: "teeth-extraction",
+    name: "Teeth Extraction",
     duration: 60,
     price: 500000,
   },
   {
-    id: "root-canal",
-    name: "Root Canal",
-    category: "Endodontics",
+    id: "teeth-whitening",
+    name: "Teeth Whitening",
     duration: 60,
     price: 200000,
   },
   {
-    id: "wisdom-tooth",
-    name: "Wisdom Tooth",
-    category: "Endodontics",
+    id: "scaling-washing",
+    name: "Scaling and Washing",
+    duration: 70,
+    price: 100000,
+  },
+  {
+    id: "filling",
+    name: "Filling",
     duration: 70,
     price: 100000,
   },
