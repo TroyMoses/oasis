@@ -12,7 +12,7 @@ export default function About() {
             alt="Dental procedure"
             width={600}
             height={400}
-            className="rounded-lg h-[380px] w-[550px] ml-5 md:ml-10"
+            className="rounded-lg md:h-[380px] w-[550px] ml-5 md:ml-10"
           />
           <div className="pl-6">
             <h2 className="text-3xl text-blue-800 font-bold mb-6">
