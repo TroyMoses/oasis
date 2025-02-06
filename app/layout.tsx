@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from '@next/font/google';
 import "./globals.css";
 import Footer from "@/components/footer";
 import ScrollToTop from "@/components/scroll-to-top";
@@ -8,7 +8,10 @@ import Navbar from "@/components/navbar";
 import { ConvexClientProvider } from "./ConvexClientProvider";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], 
+});
 
 export const metadata: Metadata = {
   title: "Oasis Dental Clinic",
@@ -22,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <ConvexClientProvider>
           <Navbar />
           <div className="pt-20">{children}</div>
