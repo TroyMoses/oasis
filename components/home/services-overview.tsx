@@ -8,13 +8,13 @@ const services = [
     icon: "/icons/examination.png",
     title: "Dental Examination",
     description:
-      "Looking for orthordontic experts in Kampala for teeth alignment? Consider a dental solutions kampala clinic near you. Dental braces are a popular treatment option for straightening teeth and correcting misalignment. Book an appointment with our",
+      "Looking for orthordontic experts in Kampala for teeth alignment? Consider Oasis dental clinic near you. Dental braces are a popular treatment option for straightening teeth and correcting misalignment. Book an appointment with our",
   },
   {
     icon: "/icons/scaling.png",
     title: "Scaling and Washing",
     description:
-      "Looking for a dental crown and bridge work services near me in Kampala uganda? look no further than Dental solutions Kampala,we provide expert dental crowns and bridge procedures to restore your",
+      "Looking for a dental crown and bridge work services near me in Kampala uganda? look no further than Oasis dental clinic,we provide expert dental crowns and bridge procedures to restore your",
   },
   {
     icon: "/icons/whitening.png",
@@ -36,7 +36,7 @@ export default function ServicesOverview() {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl text-blue-800 font-bold">
-            Dental Solutions Services
+            Oasis Dental Clinic Services
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

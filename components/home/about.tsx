@@ -21,7 +21,7 @@ export default function About() {
             <p className="text-muted-foreground mb-6">
               Since 2012, we have provided patients with the finest dental
               health treatments in Uganda. Our team of highly skilled
-              specialists, consisting of dentists and hygienists are led by Dr.
+              specialists, consisting of dentists and hygienists are led by Dr. Moses
               in their commitment to excellence. Each of our clinics are
               equipped to provide a complete range of treatments: Including
               general dentistry, state-of-the-art cosmetic dentistry, dental
