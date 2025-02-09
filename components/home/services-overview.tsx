@@ -1,29 +1,29 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { SmileIcon as Tooth, Crown, Microscope } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   {
-    icon: Tooth,
+    icon: "/icons/examination.png",
     title: "Dental Examination",
     description:
       "Looking for orthordontic experts in Kampala for teeth alignment? Consider a dental solutions kampala clinic near you. Dental braces are a popular treatment option for straightening teeth and correcting misalignment. Book an appointment with our",
   },
   {
-    icon: Crown,
+    icon: "/icons/scaling.png",
     title: "Scaling and Washing",
     description:
       "Looking for a dental crown and bridge work services near me in Kampala uganda? look no further than Dental solutions Kampala,we provide expert dental crowns and bridge procedures to restore your",
   },
   {
-    icon: Microscope,
+    icon: "/icons/whitening.png",
     title: "Teeth Whitening",
     description:
       "Looking for teeth whitening services in Kampala? Visit our dental clinic and let our expert dentists brighten your smile. We offer the best teeth whitening services to give you a dazzling smile. Find a dentist near you and",
   },
   {
-    icon: Microscope,
+    icon: "/icons/filling.png",
     title: "Fillings",
     description:
       "Looking for teeth whitening services in Kampala? Visit our dental clinic and let our expert dentists brighten your smile. We offer the best teeth whitening services to give you a dazzling smile. Find a dentist near you and",
@@ -42,10 +42,10 @@ export default function ServicesOverview() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
+              <CardContent className="pt-2 pb-6">
                 <div className="text-center md:text-left">
                   <div className="flex md:block justify-center items-center text-center">
-                    <service.icon className="h-12 w-12 text-blue-800 mb-4" />
+                    <Image width={48} height={48} alt={service.title} className="h-[52px] w-[52px] mb-2" src={service.icon}/>
                   </div>
                   <h3 className="text-xl text-blue-800 font-bold mb-3">
                     {service.title}

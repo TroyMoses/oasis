@@ -3,20 +3,20 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const cases = [
   {
+    title: "Primecare Filling",
+    image: "/before-after/5.png",
+  },
+  {
+    title: "Primecare Whitening",
+    image: "/before-after/4.jpg",
+  },
+  {
     title: "Primecare Cleaning",
-    image: "/banner2.jpg",
+    image: "/before-after/1.jpg",
   },
   {
-    title: "Primecare ortho",
-    image: "/banner1.jpg",
-  },
-  {
-    title: "Primecare braces",
-    image: "/banner2.jpg",
-  },
-  {
-    title: "Primecare ortho",
-    image: "/banner1.jpg",
+    title: "Primecare Ortho",
+    image: "/before-after/2.jpg",
   },
 ];
 
