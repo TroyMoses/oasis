@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-// import { SmileIcon as Tooth, Crown, Microscope } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -46,7 +45,6 @@ export default function ServicesOverview() {
               <CardContent className="pt-2 pb-6">
                 <div className="text-center md:text-left">
                   <div className="flex md:block justify-center items-center text-center">
-                    {/* <service.icon className="h-12 w-12 text-blue-800 mb-4" /> */}
                     <Image width={48} height={48} alt={service.title} className="h-[52px] w-[52px] mb-2" src={service.icon}/>
                   </div>
                   <h3 className="text-xl text-blue-800 font-bold mb-3">
