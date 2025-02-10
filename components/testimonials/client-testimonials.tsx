@@ -3,22 +3,16 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Mukiibi Denis",
+    name: "Dorah Nanyanzi",
     role: "Patient",
-    content: "I enjoyed your services. I feel no pain now.",
-    avatar: "/placeholder.svg",
+    content: "I enjoyed the services, especially the fillings and implants.",
+    avatar: "/testimonials/Dorah_Nanyanzi.png",
   },
   {
-    name: "Kelly Mbabazi",
+    name: "Patrick Rosh",
     role: "Patient",
-    content: "Quality Crowns. I can now smile 😊",
-    avatar: "/placeholder.svg",
-  },
-  {
-    name: "Philip Katende",
-    role: "Patient",
-    content: "Am glad I found you Doctor.",
-    avatar: "/placeholder.svg",
+    content: "Quality Braces. I can now smile confidently 😊",
+    avatar: "/testimonials/Patrick_Rosh.png",
   },
 ];
 
