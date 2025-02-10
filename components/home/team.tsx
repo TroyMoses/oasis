@@ -6,20 +6,20 @@ import Link from "next/link";
 const team = [
   {
     name: "Dr. Moses",
-    role: "Fillings, dental surgery.",
-    phone: "0701020304",
+    role: "Prothodontist",
+    phone: "0752136615",
     image: "/moses.jpg",
   },
   {
     name: "Nurse Cathy",
-    role: "Orthodontic treatment.",
-    phone: "0701020304",
+    role: "Whitening and Scaling",
+    phone: "0776295077",
     image: "/cathy.jpg",
   },
   {
     name: "Dr. Francis",
-    role: "Our Prosthodontist.",
-    phone: "0788877374",
+    role: "Dentist",
+    phone: "0752136615",
     image: "/francis.jpg",
   },
 ];
