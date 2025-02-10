@@ -6,32 +6,32 @@ import { Phone } from "lucide-react";
 const team = [
   {
     name: "Dr. Moses",
-    role: "Fillings, dental surgery.",
-    phone: "0701020304",
+    role: "Prothodontist",
+    phone: "0752136615",
     image: "/moses.jpg",
   },
   {
     name: "Nurse Cathy",
-    role: "Orthodontic treatment.",
-    phone: "0701020304",
+    role: "Whitening and Scaling",
+    phone: "0776295077",
     image: "/cathy.jpg",
   },
   {
     name: "Dr. Francis",
-    role: "Our Prosthodontist.",
-    phone: "0788877374",
+    role: "Dentist",
+    phone: "0752136615",
     image: "/francis.jpg",
   },
   {
     name: "Nurse Flavia",
-    role: "Specialized in dental implants.",
+    role: "Dental implants",
     phone: "0701020304",
     image: "/flavia.png",
   },
   {
     name: "Nurse Najwa",
-    role: "Specialized in veneers.",
-    phone: "0701020304",
+    role: "Receptionist",
+    phone: "0776295077",
     image: "/najwa.jpg",
   },
 ];
