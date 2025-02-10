@@ -19,19 +19,19 @@ export default function About() {
               About Oasis Dental Clinic
             </h2>
             <p className="text-muted-foreground mb-6">
-              Since 2012, we have provided patients with the finest dental
-              health treatments in Uganda. Our team of highly skilled
-              specialists, consisting of dentists and hygienists are led by Dr. Moses
-              in their commitment to excellence. Each of our clinics are
-              equipped to provide a complete range of treatments: Including
-              general dentistry, state-of-the-art cosmetic dentistry, dental
-              implants, prosthetics, children{"'"}s dentistry, veneer placements
-              and orthodontics.
+              Experience the future of dental care at Oasis Dental Clinic. With
+              5 years of innovation and excellence, our team, led by Dr. Moses,
+              is passionate about harnessing the latest technologies and
+              techniques to deliver unparalled results and an exceptional
+              patient experience. Step into Oasis Dental Clinic and discover a
+              world of cutting-edge dental care and health.
             </p>
             {/* Link button to the about page */}
             <div className="text-center md:text-left">
               <Link href="/about">
-                <Button className="mt-2 md:mt-5 bg-blue-800">Explore More</Button>
+                <Button className="mt-2 md:mt-5 bg-blue-800">
+                  Explore More
+                </Button>
               </Link>
             </div>
           </div>
