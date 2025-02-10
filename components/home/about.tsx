@@ -18,13 +18,18 @@ export default function About() {
             <h2 className="text-3xl text-blue-800 font-bold mb-6">
               About Oasis Dental Clinic
             </h2>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-5">
               Experience the future of dental care at Oasis Dental Clinic. With
               5 years of innovation and excellence, our team, led by Dr. Moses,
               is passionate about harnessing the latest technologies and
-              techniques to deliver unparalled results and an exceptional
-              patient experience. Step into Oasis Dental Clinic and discover a
-              world of cutting-edge dental care and health.
+              techniques to deliver unparalleled results and an exceptional
+              patient experience. We prioritize your comfort and well-being,
+              creating a relaxing and welcoming environment. Our comprehensive
+              services range from routine checkups to advanced cosmetic and
+              restorative procedures. Let us help you achieve a healthy,
+              confident smile that lasts a lifetime. Step into Oasis Dental
+              Clinic and discover a world of cutting-edge dental care and
+              health.
             </p>
             {/* Link button to the about page */}
             <div className="text-center md:text-left">
