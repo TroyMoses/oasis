@@ -22,4 +22,11 @@ export default defineSchema({
     amount: v.number(),
     createdAt: v.number(),
   }),
+  testimonials: defineTable({
+    name: v.string(),
+    role: v.string(),
+    content: v.string(),
+    storageId: v.string(),
+    createdAt: v.number(),
+  }),
 });

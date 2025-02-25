@@ -124,11 +124,11 @@ export default function Footer() {
               Oasis Dental SPA © 2025 | All rights reserved
             </p>
             <div className="flex gap-4 md:mr-[165px]">
-              <Link href="#" className="text-gray-400 hover:text-primary">
-                <Facebook className="h-5 w-5" />
+              <Link href="https://www.tiktok.com/@cathy.oasisdentalclinic?_t=ZM-8tpbq7Myed5&_r=1" className="text-gray-400 hover:text-primary">
+                <Twitter className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-primary">
-                <Twitter className="h-5 w-5" />
+                <Facebook className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-primary">
                 <Instagram className="h-5 w-5" />
