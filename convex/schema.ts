@@ -26,7 +26,7 @@ export default defineSchema({
     name: v.string(),
     role: v.string(),
     content: v.string(),
-    avatar: v.string(),
+    storageId: v.string(),
     createdAt: v.number(),
   }),
 });

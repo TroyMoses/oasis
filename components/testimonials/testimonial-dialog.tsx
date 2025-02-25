@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -26,52 +26,102 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useRouter } from "next/navigation";
+import { ImageIcon, Loader2 } from "lucide-react";
+import Image from "next/image";
+
+const MAX_FILE_SIZE = 5 * 1024 * 1024;
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   content: z.string().min(10, "Testimonial must be at least 10 characters"),
-  avatar: z.string().url("Please provide a valid image URL"),
 });
 
 interface TestimonialDialogProps {
-  onTestimonialSubmit: (data: z.infer<typeof formSchema>) => Promise<void>;
+  onTestimonialSubmit: (data: {
+    name: string;
+    content: string;
+    file: File;
+  }) => Promise<void>;
 }
 
 export function TestimonialDialog({
   onTestimonialSubmit,
 }: TestimonialDialogProps) {
-  const router = useRouter();
-
   const [open, setOpen] = useState(false);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       content: "",
-      avatar: "",
     },
   });
 
+  const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (file.size > MAX_FILE_SIZE) {
+      toast({
+        variant: "destructive",
+        title: "File too large",
+        description: "Please select an image under 5MB",
+      });
+      return;
+    }
+
+    if (!file.type.startsWith("image/")) {
+      toast({
+        variant: "destructive",
+        title: "Invalid file type",
+        description: "Please select an image file",
+      });
+      return;
+    }
+
+    setSelectedFile(file);
+    setPreviewUrl(URL.createObjectURL(file));
+  };
+
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    if (!selectedFile) {
+      toast({
+        variant: "destructive",
+        title: "Image required",
+        description: "Please select a profile image",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
     try {
-      await onTestimonialSubmit(data);
+      await onTestimonialSubmit({
+        ...data,
+        file: selectedFile,
+      });
       setOpen(false);
       form.reset();
+      setSelectedFile(null);
+      setPreviewUrl(null);
       toast({
         title: "Testimonial submitted successfully!",
         description: "Thank you for sharing your experience.",
       });
-
       router.push("/testimonials");
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     } catch (error) {
       toast({
         variant: "destructive",
         title: "Error submitting testimonial",
         description: "Please try again later.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -105,22 +155,44 @@ export function TestimonialDialog({
                 </FormItem>
               )}
             />
-            <FormField
-              control={form.control}
-              name="avatar"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Profile Picture URL</FormLabel>
-                  <FormControl>
-                    <Input
-                      placeholder="https://example.com/your-photo.jpg"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+
+            <FormItem>
+              <FormLabel>Profile Picture</FormLabel>
+              <FormControl>
+                <div className="flex flex-col items-center gap-4">
+                  {previewUrl ? (
+                    <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                      <Image
+                        src={previewUrl || "/placeholder.svg"}
+                        alt="Preview"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-32 h-32 rounded-full bg-muted flex items-center justify-center">
+                      <ImageIcon className="h-10 w-10 text-muted-foreground" />
+                    </div>
+                  )}
+                  <input
+                    title="avatar"
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    ref={fileInputRef}
+                    onChange={handleFileSelect}
+                  />
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => fileInputRef.current?.click()}
+                  >
+                    {previewUrl ? "Change Photo" : "Upload Photo"}
+                  </Button>
+                </div>
+              </FormControl>
+            </FormItem>
+
             <FormField
               control={form.control}
               name="content"
@@ -138,8 +210,15 @@ export function TestimonialDialog({
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full">
-              Submit Testimonial
+            <Button type="submit" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Submitting...
+                </>
+              ) : (
+                "Submit Testimonial"
+              )}
             </Button>
           </form>
         </Form>
