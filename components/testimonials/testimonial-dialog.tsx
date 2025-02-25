@@ -113,7 +113,6 @@ export function TestimonialDialog({
         title: "Testimonial submitted successfully!",
         description: "Thank you for sharing your experience.",
       });
-      router.push("/testimonials");
     } catch (error) {
       toast({
         variant: "destructive",
