@@ -2,14 +2,12 @@
 
 import Link from "next/link";
 import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
   Mail,
   Phone,
   Clock,
 } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThreads, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -23,15 +21,9 @@ export default function Footer() {
             </h3>
             <div className="space-y-2">
               <h4 className="text-gray-500">Makerere Kavule</h4>
-              <p className="text-gray-500">
-                Head Offices Station;
-              </p>
-              <p className="text-gray-500">
-                Next to National Unity Platform,
-              </p>
-              <p className="text-gray-500">
-                Near Tosha Petrol Station.
-              </p>
+              <p className="text-gray-500">Head Offices Station;</p>
+              <p className="text-gray-500">Next to National Unity Platform,</p>
+              <p className="text-gray-500">Near Tosha Petrol Station.</p>
             </div>
 
             <div className="mt-6">
@@ -124,17 +116,14 @@ export default function Footer() {
               Oasis Dental SPA © 2025 | All rights reserved
             </p>
             <div className="flex gap-4 md:mr-[165px]">
-              <Link href="https://www.tiktok.com/@cathy.oasisdentalclinic?_t=ZM-8tpbq7Myed5&_r=1" className="text-gray-400 hover:text-primary">
-                <Twitter className="h-5 w-5" />
+              <Link href="https://www.tiktok.com/@cathy.oasisdentalclinic?_t=ZM-8tpbq7Myed5&_r=1" className="text-gray-400 hover:text-blue-800">
+                <FontAwesomeIcon icon={faTiktok} />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-primary">
-                <Facebook className="h-5 w-5" />
+              <Link href="https://www.instagram.com/oasisdentalclinics?igsh=YWF4dHhzM3BqZTh5&utm_source=qr" className="text-gray-400 hover:text-blue-800">
+                <FontAwesomeIcon icon={faInstagram} />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-primary">
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-primary">
-                <Youtube className="h-5 w-5" />
+              <Link href="https://www.threads.net/@oasisdentalclinics?invite=0" className="text-gray-400 hover:text-blue-800">
+                <FontAwesomeIcon icon={faThreads} />
               </Link>
             </div>
           </div>
