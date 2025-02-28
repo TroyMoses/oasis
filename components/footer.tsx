@@ -116,13 +116,13 @@ export default function Footer() {
               Oasis Dental SPA © 2025 | All rights reserved
             </p>
             <div className="flex gap-4 md:mr-[165px]">
-              <Link href="https://www.tiktok.com/@cathy.oasisdentalclinic?_t=ZM-8tpbq7Myed5&_r=1" className="text-gray-400 hover:text-primary">
+              <Link href="https://www.tiktok.com/@cathy.oasisdentalclinic?_t=ZM-8tpbq7Myed5&_r=1" className="text-gray-400 hover:text-blue-800">
                 <FontAwesomeIcon icon={faTiktok} />
               </Link>
-              <Link href="https://www.instagram.com/oasisdentalclinics?igsh=YWF4dHhzM3BqZTh5&utm_source=qr" className="text-gray-400 hover:text-primary">
+              <Link href="https://www.instagram.com/oasisdentalclinics?igsh=YWF4dHhzM3BqZTh5&utm_source=qr" className="text-gray-400 hover:text-blue-800">
                 <FontAwesomeIcon icon={faInstagram} />
               </Link>
-              <Link href="https://www.threads.net/@oasisdentalclinics?invite=0" className="text-gray-400 hover:text-primary">
+              <Link href="https://www.threads.net/@oasisdentalclinics?invite=0" className="text-gray-400 hover:text-blue-800">
                 <FontAwesomeIcon icon={faThreads} />
               </Link>
             </div>
