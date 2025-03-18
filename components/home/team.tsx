@@ -6,7 +6,7 @@ import Link from "next/link";
 const team = [
   {
     name: "Dr. Moses",
-    role: "Prothodontist",
+    role: "Prosthodontist",
     phone: "0752136615",
     image: "/moses.jpg",
   },

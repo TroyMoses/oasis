@@ -6,7 +6,7 @@ import { Phone } from "lucide-react";
 const team = [
   {
     name: "Dr. Moses",
-    role: "Prothodontist",
+    role: "Prosthodontist",
     phone: "0752136615",
     image: "/moses.jpg",
   },
@@ -25,7 +25,7 @@ const team = [
   {
     name: "Nurse Flavia",
     role: "Dental implants",
-    phone: "0701020304",
+    phone: "0752136615",
     image: "/flavia.png",
   },
   {
