@@ -8,25 +8,25 @@ const services = [
     icon: "/icons/examination.png",
     title: "Dental Examination",
     description:
-      "Looking for orthordontic experts in Kampala for teeth alignment? Consider Oasis dental clinic near you. Dental braces are a popular treatment option for straightening teeth and correcting misalignment. Book an appointment with our",
+      "Take the first step towards a healthier, happier smile with our comprehensive dental examination. Our thorough dental examination is designed to assess the overall health of your teeth, gums, and mouth. Our experienced dentists will carefully evaluate your oral health, identifying any potential issues or concerns.",
   },
   {
     icon: "/icons/scaling.png",
     title: "Scaling and Washing",
     description:
-      "Looking for a dental crown and bridge work services near me in Kampala uganda? look no further than Oasis dental clinic,we provide expert dental crowns and bridge procedures to restore your",
+      "Maintain a healthy, radiant smile with our professional scaling and washing service. Our scaling and washing treatment is a thorough deep cleaning process that removes plaque, tartar, and stains from your teeth, both above and below the gum line. This essential dental care service helps prevent gum disease, promotes healthy gums, and leaves your mouth feeling fresh and clean.",
   },
   {
     icon: "/icons/whitening.png",
     title: "Teeth Whitening",
     description:
-      "Looking for teeth whitening services in Kampala? Visit our dental clinic and let our expert dentists brighten your smile. We offer the best teeth whitening services to give you a dazzling smile. Find a dentist near you and",
+      "Our teeth whitening treatment is designed to safely and effectively remove stains and discoloration from your teeth, leaving you with a whiter, more confident smile. Our experienced dentists use the latest technology and high-quality whitening agents to ensure optimal results.",
   },
   {
     icon: "/icons/filling.png",
     title: "Fillings",
     description:
-      "Looking for teeth whitening services in Kampala? Visit our dental clinic and let our expert dentists brighten your smile. We offer the best teeth whitening services to give you a dazzling smile. Find a dentist near you and",
+      "Restore your smile with our dental filling service, designed to repair and protect your teeth. Our dental filling treatment is a quick and effective way to repair teeth damaged by decay, cracks, or fractures. Our experienced dentists use high-quality materials to fill the affected area, restoring the natural shape and function of your tooth.",
   },
 ];
 

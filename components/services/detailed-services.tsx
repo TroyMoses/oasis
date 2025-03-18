@@ -6,31 +6,31 @@ const services = [
   {
     title: "Dental Examination",
     description:
-      "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles. They are cemented onto the existing teeth using a bonding agent. Cosmetic fillings can improve the appearance of your smile. Unlike silver-colored",
+      "Take the first step towards a healthier, happier smile with our comprehensive dental examination. Our thorough dental examination is designed to assess the overall health of your teeth, gums, and mouth. Our experienced dentists will carefully evaluate your oral health, identifying any potential issues or concerns.",
     image: "/2.jpg",
   },
   {
-    title: "Extraction, Automatic Restoration",
+    title: "Extraction, Immediate Restoration",
     description:
-      "A dental crown or cap is a type of tooth restoration that completely cover or encircles a damaged, decayed, discolored or misshapen tooth or dental implant",
+      "Get back to smiling confidently with our efficient teeth extraction and immediate restoration service.",
     image: "/examination.jpg",
   },
   {
     title: "Teeth Whitening",
     description:
-      "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular tooth cleanings are important to",
+      "Our teeth whitening treatment is designed to safely and effectively remove stains and discoloration from your teeth, leaving you with a whiter, more confident smile. Our experienced dentists use the latest technology and high-quality whitening agents to ensure optimal results.",
     image: "/Whitening.png",
   },
   {
     title: "Scaling and Washing",
     description:
-      "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular tooth cleanings are important to",
+      "Maintain a healthy, radiant smile with our professional scaling and washing service. Our scaling and washing treatment is a thorough deep cleaning process that removes plaque, tartar, and stains from your teeth, both above and below the gum line. This essential dental care service helps prevent gum disease, promotes healthy gums, and leaves your mouth feeling fresh and clean.",
     image: "/1.jpg",
   },
   {
-    title: "Filling",
+    title: "Dental Fillings",
     description:
-      "You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular tooth cleanings are important to",
+      "Restore your smile with our dental filling service, designed to repair and protect your teeth. Our dental filling treatment is a quick and effective way to repair teeth damaged by decay, cracks, or fractures. Our experienced dentists use high-quality materials to fill the affected area, restoring the natural shape and function of your tooth.",
     image: "/4.jpg",
   },
 ];
