@@ -79,18 +79,12 @@ export default function ServiceStep({
               }`}
               onClick={() => onSelect(service)}
             >
-              <div className="flex gap-4">
+              <div className="flex gap-4 items-center">
                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center">
                   <Mountain className="h-6 w-6 text-blue-800" />
                 </div>
-                <div className="flex-1">
-                  <h3 className="font-medium mb-2 text-blue-800">{service.name}</h3>
-                  <div className="flex justify-between text-sm text-muted-foreground">
-                    <span>Duration: {service.duration}m</span>
-                    <span className="font-semibold text-blue-800">
-                      UGX{service.price.toLocaleString()}
-                    </span>
-                  </div>
+                <div className="flex items-center">
+                  <h3 className="font-medium text-blue-800">{service.name}</h3>
                 </div>
               </div>
             </Card>
