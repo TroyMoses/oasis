@@ -43,9 +43,6 @@ export default function BeforeAfter() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4 bg-primary text-white text-center">
-                  {item.title}
-                </div>
               </CardContent>
             </Card>
           ))}
