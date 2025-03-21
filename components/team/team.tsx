@@ -23,6 +23,12 @@ const team = [
     image: "/daniel_endodontist.jpg",
   },
   {
+    name: "Dr. Innocent",
+    role: "Hygienist",
+    phone: "0752136615",
+    image: "/innocent_hygienist.jpg",
+  },
+  {
     name: "Nurse Cathy",
     role: "Whitening and Scaling",
     phone: "0776295077",
