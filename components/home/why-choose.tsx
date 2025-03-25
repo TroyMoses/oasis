@@ -46,7 +46,8 @@ export default function WhyChoose() {
             </div>
           </div>
           <Image
-            src="/Whitening.png"
+            // src="/Whitening.png"
+            src="https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2a7fe00188189e4b6/view?project=67e2a223000b0eb6c75c&mode=admin"
             alt="Dental clinic reception"
             width={600}
             height={400}
