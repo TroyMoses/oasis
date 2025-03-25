@@ -4,19 +4,23 @@ import { Card, CardContent } from "@/components/ui/card";
 const cases = [
   {
     title: "Primecare Filling",
-    image: "/before-after/5.png",
+    // image: "/before-after/5.png",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2cb6f0037eae4147d/view?project=67e2a223000b0eb6c75c&mode=admin",
   },
   {
     title: "Primecare Whitening",
-    image: "/before-after/4.jpg",
+    // image: "/before-after/4.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2cb63000c940bb8eb/view?project=67e2a223000b0eb6c75c&mode=admin",
   },
   {
     title: "Primecare Cleaning",
-    image: "/before-after/1.jpg",
+    // image: "/before-after/1.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2cb4b00320c7bd12b/view?project=67e2a223000b0eb6c75c&mode=admin",
   },
   {
     title: "Primecare Ortho",
-    image: "/before-after/2.jpg",
+    // image: "/before-after/2.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2cb570034f8cf1114/view?project=67e2a223000b0eb6c75c&mode=admin",
   },
 ];
 

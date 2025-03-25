@@ -9,6 +9,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <Image
             src="/Implants.png"
+            // src="https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2c4a6000624ed9805/view?project=67e2a223000b0eb6c75c&mode=admin"
             alt="Dental procedure"
             width={600}
             height={400}

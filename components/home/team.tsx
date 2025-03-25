@@ -8,19 +8,22 @@ const team = [
     name: "Dr. Moses",
     role: "Prosthodontist",
     phone: "0752136615",
-    image: "/moses.jpg",
+    // image: "/moses.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2a8bc00399ed1810f/view?project=67e2a223000b0eb6c75c&mode=admin",
   },
   {
     name: "Nurse Cathy",
     role: "Whitening and Scaling",
     phone: "0776295077",
-    image: "/cathy.jpg",
+    // image: "/cathy.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2a87a001a1e5f18ea/view?project=67e2a223000b0eb6c75c&mode=admin",
   },
   {
     name: "Dr. Francis",
     role: "Dentist",
     phone: "0752136615",
-    image: "/francis.jpg",
+    // image: "/francis.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2a8a50007081dd760/view?project=67e2a223000b0eb6c75c&mode=admin",
   },
 ];
 
