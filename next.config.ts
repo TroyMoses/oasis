@@ -14,6 +14,16 @@ const nextConfig: NextConfig = {
       },
     ]
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cloud.appwrite.io',
+        pathname: '/v1/storage/buckets/**',
+        port: '',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

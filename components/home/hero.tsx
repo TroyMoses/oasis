@@ -17,7 +17,8 @@ import { Button } from "../ui/button";
 const banners = [
   {
     id: 1,
-    image: "/banner.jpg",
+    // image: "/banner.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2a2ac001af44ae9c1/view?project=67e2a223000b0eb6c75c&mode=admin",
     alt: "Confident smile",
     title: "Your Beautiful Smile Starts Here",
     subtitle: "Experience world-class dental care with our expert team",
@@ -25,7 +26,8 @@ const banners = [
   },
   {
     id: 2,
-    image: "/banner11.jpg",
+    // image: "/banner11.jpg",
+    image: "https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2a330002983ec4dfa/view?project=67e2a223000b0eb6c75c&mode=admin",
     alt: "Orthodontic treatment",
     title: "Transform Your Smile Today",
     subtitle: "Advanced orthodontic solutions for a confident future",
