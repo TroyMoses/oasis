@@ -30,7 +30,8 @@ export default function WhatWeDo() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square bg-slate-100 rounded-lg overflow-hidden">
             <Image
-              src="/afande.jpg"
+              // src="/afande.jpg"
+              src="https://cloud.appwrite.io/v1/storage/buckets/67e2a25800133a4087d0/files/67e2c6ac003b30aad364/view?project=67e2a223000b0eb6c75c&mode=admin"
               alt="Best Dental Clinic"
               fill
               className="object-cover rounded-sm"
