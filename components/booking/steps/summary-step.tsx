@@ -99,14 +99,14 @@ export default function SummaryStep({ bookingData, onBack }: SummaryStepProps) {
           </p>
         </div>
 
-        <div className="border-t pt-4 mt-4 text-blue-800">
+        {/* <div className="border-t pt-4 mt-4 text-blue-800">
           <div className="flex justify-between">
             <p className="font-medium">Total Amount Payable</p>
             <p className="font-bold">
               UGX{bookingData.service.price.toLocaleString()}
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex justify-between pt-4">
