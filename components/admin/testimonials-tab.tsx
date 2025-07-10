@@ -108,7 +108,7 @@ export default function TestimonialsTab() {
                             testimonial.isVisible ? "default" : "secondary"
                           }
                           className={
-                            testimonial.isVisible
+                            testimonial.isVisible ?? false
                               ? "bg-green-100 text-green-800"
                               : ""
                           }
@@ -137,7 +137,7 @@ export default function TestimonialsTab() {
                           onClick={() =>
                             handleToggleVisibility(
                               testimonial._id,
-                              testimonial.isVisible
+                              testimonial.isVisible ?? false
                             )
                           }
                           className={
