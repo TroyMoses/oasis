@@ -123,7 +123,7 @@ export default function TestimonialsTab() {
                             Testimonial:
                           </span>
                           <blockquote className="text-sm mt-1 p-3 bg-gray-50 rounded italic">
-                            "{testimonial.content}"
+                            &quot;{testimonial.content}&quot;
                           </blockquote>
                         </div>
                       </div>

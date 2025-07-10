@@ -45,7 +45,7 @@ export function useAuth() {
     if (token) {
       try {
         await logout({ token });
-      } catch (error) {
+      } catch {
         // Continue with logout even if server call fails
       }
     }
