@@ -54,7 +54,7 @@ export default function AdminLogin() {
           description: "You don't have admin privileges",
         });
       }
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Login failed",

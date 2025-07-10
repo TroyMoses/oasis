@@ -27,7 +27,7 @@ export default function TestimonialsTab() {
         title: "Visibility updated",
         description: `Testimonial is now ${!isVisible ? "visible" : "hidden"}`,
       });
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Error",
@@ -45,7 +45,7 @@ export default function TestimonialsTab() {
         title: "Testimonial deleted",
         description: "The testimonial has been permanently deleted",
       });
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Error",

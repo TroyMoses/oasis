@@ -74,7 +74,7 @@ export default function UsersTab() {
         title: "Role updated",
         description: `User role has been ${!currentIsAdmin ? "promoted to admin" : "demoted to user"}`,
       });
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Error",
@@ -115,7 +115,7 @@ export default function UsersTab() {
       setNewPassword("");
       setSelectedUserId(null);
       setIsPasswordDialogOpen(false);
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Error",

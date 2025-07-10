@@ -37,7 +37,7 @@ export default function AppointmentsTab() {
         title: "Status updated",
         description: `Appointment status changed to ${newStatus}`,
       });
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Error",

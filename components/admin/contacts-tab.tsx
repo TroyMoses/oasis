@@ -22,7 +22,7 @@ export default function ContactsTab() {
         title: "Marked as read",
         description: "Contact message has been marked as read",
       });
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Error",
