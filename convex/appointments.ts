@@ -1,4 +1,4 @@
-import { mutation } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 
 export const create = mutation({
@@ -16,8 +16,27 @@ export const create = mutation({
   handler: async (ctx, args) => {
     const appointmentId = await ctx.db.insert("appointments", {
       ...args,
+      status: "pending",
       createdAt: Date.now(),
     });
     return appointmentId;
+  },
+});
+
+export const list = query({
+  handler: async (ctx) => {
+    return await ctx.db.query("appointments").order("desc").collect();
+  },
+});
+
+export const updateStatus = mutation({
+  args: {
+    appointmentId: v.id("appointments"),
+    status: v.string(),
+  },
+  handler: async (ctx, args) => {
+    await ctx.db.patch(args.appointmentId, {
+      status: args.status,
+    });
   },
 });
