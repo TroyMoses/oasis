@@ -22,7 +22,7 @@ import { TestimonialDialog } from "./testimonial-dialog";
 // ];
 
 export default function ClientTestimonials() {
-  const testimonials = useQuery(api.testimonials.list) || [];
+  const testimonials = useQuery(api.testimonials.listVisible) || [];
   const generateUploadUrl = useMutation(api.testimonials.generateUploadUrl);
   const createTestimonial = useMutation(api.testimonials.create);
 

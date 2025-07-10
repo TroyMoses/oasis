@@ -17,6 +17,7 @@ export const create = mutation({
   handler: async (ctx, args) => {
     const testimonialId = await ctx.db.insert("testimonials", {
       ...args,
+      isVisible: true,
       createdAt: Date.now(),
     });
     return testimonialId;
@@ -42,5 +43,49 @@ export const list = query({
     );
 
     return testimonialsWithUrls;
+  },
+});
+
+export const listVisible = query({
+  handler: async (ctx) => {
+    const testimonials = await ctx.db
+      .query("testimonials")
+      .filter((q) => q.eq(q.field("isVisible"), true))
+      .order("desc")
+      .collect();
+
+    // Get signed URLs for each testimonial's image
+    const testimonialsWithUrls = await Promise.all(
+      testimonials.map(async (testimonial) => {
+        const url = await ctx.storage.getUrl(testimonial.storageId);
+        return {
+          ...testimonial,
+          imageUrl: url,
+        };
+      })
+    );
+
+    return testimonialsWithUrls;
+  },
+});
+
+export const toggleVisibility = mutation({
+  args: {
+    testimonialId: v.id("testimonials"),
+    isVisible: v.boolean(),
+  },
+  handler: async (ctx, args) => {
+    await ctx.db.patch(args.testimonialId, {
+      isVisible: args.isVisible,
+    });
+  },
+});
+
+export const deleteTestimonial = mutation({
+  args: {
+    testimonialId: v.id("testimonials"),
+  },
+  handler: async (ctx, args) => {
+    await ctx.db.delete(args.testimonialId);
   },
 });
